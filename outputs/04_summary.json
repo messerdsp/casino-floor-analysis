@@ -1,0 +1,187 @@
+{
+ "floor_theo_per_avail_h": 17.879564373378425,
+ "verdict_counts": {
+  "Unlucky (within noise)": 116,
+  "OK": 110,
+  "Weak game for its spot": 41,
+  "Location": 40,
+  "Short window": 2,
+  "Payout lead: inspect": 1
+ },
+ "bottom10_verdicts": {
+  "M-5076": "Short window",
+  "M-1158": "Payout lead: inspect",
+  "M-1120": "Weak game for its spot",
+  "M-1118": "Short window",
+  "M-1238": "Location",
+  "M-1181": "Weak game for its spot",
+  "M-1035": "Location",
+  "M-1179": "Weak game for its spot",
+  "M-1017": "Location",
+  "M-1265": "Weak game for its spot"
+ },
+ "zone_theo_h_vs_floor": {
+  "Z-B40": 0.654,
+  "Z-BAR": 0.989,
+  "Z-ENT": 1.193,
+  "Z-GAR": 0.945,
+  "Z-HL": 0.93,
+  "Z-HTL": 1.02,
+  "Z-PIT": 1.167
+ },
+ "true_underperformers_top10": [
+  {
+   "machine_id": "M-1200",
+   "theme": "Royal Draw",
+   "zone_id": "Z-PIT",
+   "bank_id": "B-07",
+   "theo_per_avail_h": 10.82,
+   "zone_peer_theo_h": 21.01,
+   "coin_h_vs_zone": 0.99,
+   "replacement_gain_per_day": 243.87
+  },
+  {
+   "machine_id": "M-1115",
+   "theme": "Royal Draw",
+   "zone_id": "Z-PIT",
+   "bank_id": "B-07",
+   "theo_per_avail_h": 10.9,
+   "zone_peer_theo_h": 21.01,
+   "coin_h_vs_zone": 0.99,
+   "replacement_gain_per_day": 241.86
+  },
+  {
+   "machine_id": "M-1009",
+   "theme": "Royal Draw",
+   "zone_id": "Z-PIT",
+   "bank_id": "B-18",
+   "theo_per_avail_h": 10.91,
+   "zone_peer_theo_h": 21.01,
+   "coin_h_vs_zone": 0.99,
+   "replacement_gain_per_day": 240.67
+  },
+  {
+   "machine_id": "M-1162",
+   "theme": "Royal Draw",
+   "zone_id": "Z-GAR",
+   "bank_id": "B-47",
+   "theo_per_avail_h": 8.54,
+   "zone_peer_theo_h": 17.14,
+   "coin_h_vs_zone": 0.95,
+   "replacement_gain_per_day": 205.71
+  },
+  {
+   "machine_id": "M-1026",
+   "theme": "Royal Draw",
+   "zone_id": "Z-BAR",
+   "bank_id": "B-21",
+   "theo_per_avail_h": 9.34,
+   "zone_peer_theo_h": 17.86,
+   "coin_h_vs_zone": 0.99,
+   "replacement_gain_per_day": 203.6
+  },
+  {
+   "machine_id": "M-1262",
+   "theme": "Comet Cash",
+   "zone_id": "Z-ENT",
+   "bank_id": "B-01",
+   "theo_per_avail_h": 13.97,
+   "zone_peer_theo_h": 21.53,
+   "coin_h_vs_zone": 0.76,
+   "replacement_gain_per_day": 181.14
+  },
+  {
+   "machine_id": "M-1086",
+   "theme": "Comet Cash",
+   "zone_id": "Z-PIT",
+   "bank_id": "B-13",
+   "theo_per_avail_h": 13.5,
+   "zone_peer_theo_h": 20.97,
+   "coin_h_vs_zone": 0.77,
+   "replacement_gain_per_day": 178.71
+  },
+  {
+   "machine_id": "M-1139",
+   "theme": "Comet Cash",
+   "zone_id": "Z-PIT",
+   "bank_id": "B-14",
+   "theo_per_avail_h": 13.61,
+   "zone_peer_theo_h": 20.97,
+   "coin_h_vs_zone": 0.77,
+   "replacement_gain_per_day": 175.03
+  },
+  {
+   "machine_id": "M-1190",
+   "theme": "Comet Cash",
+   "zone_id": "Z-ENT",
+   "bank_id": "B-06",
+   "theo_per_avail_h": 14.25,
+   "zone_peer_theo_h": 21.52,
+   "coin_h_vs_zone": 0.77,
+   "replacement_gain_per_day": 173.7
+  },
+  {
+   "machine_id": "M-1124",
+   "theme": "Comet Cash",
+   "zone_id": "Z-ENT",
+   "bank_id": "B-06",
+   "theo_per_avail_h": 14.29,
+   "zone_peer_theo_h": 21.52,
+   "coin_h_vs_zone": 0.78,
+   "replacement_gain_per_day": 172.38
+  }
+ ],
+ "true_under_themes": {
+  "Comet Cash": 23,
+  "Lucky Lanterns": 12,
+  "Royal Draw": 6
+ },
+ "title_transfer_test": {
+  "title_effect_corr_B40_vs_prime": 0.9718429440965263,
+  "mean_diff_log": 0.004466227950948206,
+  "titles_compared": 7,
+  "title_effects": {
+   "Classic Sevens": {
+    "B40": 0.041,
+    "prime": 0.072
+   },
+   "Comet Cash": {
+    "B40": -0.345,
+    "prime": -0.343
+   },
+   "Jackpot Summit": {
+    "B40": 0.173,
+    "prime": 0.362
+   },
+   "Lucky Lanterns": {
+    "B40": -0.181,
+    "prime": -0.259
+   },
+   "Neon Nights": {
+    "B40": 0.213,
+    "prime": 0.197
+   },
+   "Prairie Thunder": {
+    "B40": 0.241,
+    "prime": 0.213
+   },
+   "Royal Draw": {
+    "B40": -0.473,
+    "prime": -0.544
+   }
+  },
+  "coin_in_elasticity_to_house_edge": -0.20221444114920736,
+  "elasticity_ci95": [
+   -0.28121323543424925,
+   -0.1232156468641655
+  ],
+  "elasticity_extra_in_prime": 0.024656950305202735,
+  "extra_ci95": [
+   -0.09492669359359407,
+   0.14424059420399954
+  ],
+  "r2_coin_in_model": 0.9530853870501979,
+  "note": "Title effects estimated separately in the Back Forty and in prime zones agree, so a title keeps its relative earning power when it moves. Tighter games draw slightly less play (a 10% higher house edge -> ~2% less coin-in/h), and that penalty is no bigger in prime zones. The theo model's R2 is partly mechanical (theo = coin-in x edge), but zone + title also explain 95% of coin-in per hour, which has no edge built in."
+ },
+ "overlap_true_top10_with_manager_bottom10": []
+}

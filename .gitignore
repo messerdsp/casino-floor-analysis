@@ -1,0 +1,10 @@
+raw/
+.venv/
+__pycache__/
+*.pyc
+.cache/
+outputs/cache/
+*.parquet
+*.csv.gz
+screenshots/tmp/
+outputs/dashboard_fact.json

@@ -1,0 +1,110 @@
+{
+ "issue_date": "2025-04-30",
+ "train_days": 120,
+ "test_days": 61,
+ "inner_validation_mae": {
+  "constant_mean": 203431.0128888889,
+  "weekday": 40285.59952167849,
+  "weekday+events": 48598.78539473188
+ },
+ "chosen_model": "weekday",
+ "formula": "y ~ C(wd)",
+ "baseline_value": 1384919.0508333333,
+ "test_mae_baseline": 218258.0969262295,
+ "test_mae_model": 68809.8848219887,
+ "test_mae_snaive": 72388.09836065574,
+ "test_mape_snaive": 0.05280261430859847,
+ "mae_improvement_vs_snaive_ci95": [
+  -1591.2911280192304,
+  8927.586713578066
+ ],
+ "test_mae_snaive_rolling": 82069.91885245901,
+ "inner_mae_snaive": 60152.611666666664,
+ "test_mae_alt": 45351.951397232195,
+ "alt_model": "weekday+events",
+ "test_mape_baseline": 0.16425086829476734,
+ "test_mape_model": 0.05029973643729069,
+ "mae_improvement_ci95": [
+  118004.44475562406,
+  180237.02323549974
+ ],
+ "test_bias_model": -39709.012405232526,
+ "pi80_coverage": 0.819672131147541,
+ "coefficients": {
+  "Intercept": 11.13963865416627,
+  "C(wd)[T.Mon]": -0.3103214048041333,
+  "C(wd)[T.Sat]": 0.09645839917240584,
+  "C(wd)[T.Sun]": -0.12301236923403225,
+  "C(wd)[T.Thu]": -0.2481178681685287,
+  "C(wd)[T.Tue]": -0.39579422201363734,
+  "C(wd)[T.Wed]": -0.3635365806719402
+ },
+ "weekday_multiplier_train": {
+  "Fri": 1.196,
+  "Mon": 0.875,
+  "Sat": 1.315,
+  "Sun": 1.058,
+  "Thu": 0.932,
+  "Tue": 0.804,
+  "Wed": 0.83
+ },
+ "by_weekday": [
+  {
+   "wd": "Fri",
+   "n": 9,
+   "bias_model": -55716.0,
+   "mae_model": 75589.0,
+   "mae_baseline": 214512.0,
+   "mae_snaive": 106987.0
+  },
+  {
+   "wd": "Mon",
+   "n": 9,
+   "bias_model": -37124.0,
+   "mae_model": 48363.0,
+   "mae_baseline": 208470.0,
+   "mae_snaive": 46981.0
+  },
+  {
+   "wd": "Sat",
+   "n": 9,
+   "bias_model": -51296.0,
+   "mae_model": 106927.0,
+   "mae_baseline": 386538.0,
+   "mae_snaive": 87431.0
+  },
+  {
+   "wd": "Sun",
+   "n": 9,
+   "bias_model": -59353.0,
+   "mae_model": 103404.0,
+   "mae_baseline": 61783.0,
+   "mae_snaive": 118552.0
+  },
+  {
+   "wd": "Thu",
+   "n": 9,
+   "bias_model": -24220.0,
+   "mae_model": 39638.0,
+   "mae_baseline": 117681.0,
+   "mae_snaive": 38517.0
+  },
+  {
+   "wd": "Tue",
+   "n": 8,
+   "bias_model": -39260.0,
+   "mae_model": 58220.0,
+   "mae_baseline": 310024.0,
+   "mae_snaive": 60323.0
+  },
+  {
+   "wd": "Wed",
+   "n": 8,
+   "bias_model": -7348.0,
+   "mae_model": 45793.0,
+   "mae_baseline": 241586.0,
+   "mae_snaive": 43360.0
+  }
+ ],
+ "locals_week_actual_vs_model": 15561.256627741202
+}

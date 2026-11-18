@@ -1,0 +1,181 @@
+{
+ "baseline_july": {
+  "comp_econ_cost_per_day_post_change": 1105.2278688524589,
+  "comp_econ_cost_30d": 33156.83606557376,
+  "carded_theo_per_day": 84628.5567622951,
+  "current_blended_points_per_face_usd": 5.778785552766426,
+  "pre_change_blended_points_per_face_usd": 13.085246907361775,
+  "avg_comp_face_usd": 11.606231339689877,
+  "avg_comp_econ_cost_usd": 3.2466002118848114
+ },
+ "assumptions": [
+  "Comp cost responds to the point price with a constant elasticity estimated from the May 1 cut (ITS on log daily comp economic cost, Feb-Apr pre-trend, HAC CI): elasticity = effect / ln(price_post/price_pre).",
+  "low uses the CI bound closest to zero (no response), high the far CI bound; extrapolating to P=20 goes beyond the observed range.",
+  "A-COMP-CHANGE sets ONE floor-wide point cost per comp face-dollar (P) for all tiers, effective after 3 lead days (27 of 30 days).",
+  "A-COMP-PILOT randomizes 50% of carded players to P=13 (pre-change level) after 5 lead days (25 days); the other 50% are the control. Its main output is a causal estimate, not savings.",
+  "Avoided comps that would have replaced a cash F&B purchase recover cash margin (cash ticket x (1-cogs ratio)); share from ITS on cash tickets per visit (low 0, high 2x central).",
+  "Carded play is assumed unchanged (central); DiD carded vs uncarded CI shown as a risk band in theo dollars.",
+  "Comp economic cost already sits in POS cogs: savings are counted once; face value is never counted as revenue.",
+  "Nothing here targets heavy losers to play more; a tier-neutral price restore reduces giveaway cost only. Any pilot should exclude self-excluded players and monitor loss-chasing signals."
+ ],
+ "elasticity_of_comp_cost_wrt_point_price": {
+  "central": -0.025222769929571235,
+  "low": -0.0,
+  "high": -0.0964968201710021
+ },
+ "substitution_share_of_extra_comps_replacing_cash": 0.0,
+ "avg_cash_ticket_usd": 14.481972731863323,
+ "cash_cogs_ratio": 0.3000760965329697,
+ "A-COMP-CHANGE": {
+  "cost_usd": 1500,
+  "lead_days": 3,
+  "active_days": 27,
+  "scenarios_by_P": {
+   "A-COMP-CHANGE_P10": {
+    "low": {
+     "comp_cost_change_pct": 0.0,
+     "comp_cost_saving_usd": -0.0,
+     "recovered_cash_margin_usd": -0.0,
+     "gross_benefit_usd": -0.0,
+     "net_after_action_cost_usd": -1500.0
+    },
+    "central": {
+     "comp_cost_change_pct": -0.013736731823200676,
+     "comp_cost_saving_usd": 409.91990862475353,
+     "recovered_cash_margin_usd": 0.0,
+     "gross_benefit_usd": 409.91990862475353,
+     "net_after_action_cost_usd": -1090.0800913752464
+    },
+    "high": {
+     "comp_cost_change_pct": -0.051542255333925535,
+     "comp_cost_saving_usd": 1538.0802995012225,
+     "recovered_cash_margin_usd": 0.0,
+     "gross_benefit_usd": 1538.0802995012225,
+     "net_after_action_cost_usd": 38.0802995012225
+    }
+   },
+   "A-COMP-CHANGE_P13": {
+    "low": {
+     "comp_cost_change_pct": 0.0,
+     "comp_cost_saving_usd": -0.0,
+     "recovered_cash_margin_usd": -0.0,
+     "gross_benefit_usd": -0.0,
+     "net_after_action_cost_usd": -1500.0
+    },
+    "central": {
+     "comp_cost_change_pct": -0.02024183407581659,
+     "comp_cost_saving_usd": 604.0396567065559,
+     "recovered_cash_margin_usd": 0.0,
+     "gross_benefit_usd": 604.0396567065559,
+     "net_after_action_cost_usd": -895.9603432934441
+    },
+    "high": {
+     "comp_cost_change_pct": -0.07525324514354281,
+     "comp_cost_saving_usd": 2245.6435613641956,
+     "recovered_cash_margin_usd": 0.0,
+     "gross_benefit_usd": 2245.6435613641956,
+     "net_after_action_cost_usd": 745.6435613641956
+    }
+   },
+   "A-COMP-CHANGE_P20": {
+    "low": {
+     "comp_cost_change_pct": 0.0,
+     "comp_cost_saving_usd": -0.0,
+     "recovered_cash_margin_usd": -0.0,
+     "gross_benefit_usd": -0.0,
+     "net_after_action_cost_usd": -1500.0
+    },
+    "central": {
+     "comp_cost_change_pct": -0.030829807847483237,
+     "comp_cost_saving_usd": 919.9969962589272,
+     "recovered_cash_margin_usd": 0.0,
+     "gross_benefit_usd": 919.9969962589272,
+     "net_after_action_cost_usd": -580.0030037410728
+    },
+    "high": {
+     "comp_cost_change_pct": -0.11290618804983132,
+     "comp_cost_saving_usd": 3369.250771161391,
+     "recovered_cash_margin_usd": 0.0,
+     "gross_benefit_usd": 3369.250771161391,
+     "net_after_action_cost_usd": 1869.2507711613912
+    }
+   }
+  }
+ },
+ "A-COMP-PILOT": {
+  "cost_usd": 4000,
+  "lead_days": 5,
+  "active_days": 25,
+  "design": "50/50 random split, treated arm P=13",
+  "scenarios": {
+   "low": {
+    "comp_cost_change_pct": 0.0,
+    "comp_cost_saving_usd": -0.0,
+    "recovered_cash_margin_usd": -0.0,
+    "gross_benefit_usd": -0.0,
+    "net_after_action_cost_usd": -4000.0
+   },
+   "central": {
+    "comp_cost_change_pct": -0.02024183407581659,
+    "comp_cost_saving_usd": 279.6479892159981,
+    "recovered_cash_margin_usd": 0.0,
+    "gross_benefit_usd": 279.6479892159981,
+    "net_after_action_cost_usd": -3720.352010784002
+   },
+   "high": {
+    "comp_cost_change_pct": -0.07525324514354281,
+    "comp_cost_saving_usd": 1039.6497969278685,
+    "recovered_cash_margin_usd": 0.0,
+    "gross_benefit_usd": 1039.6497969278685,
+    "net_after_action_cost_usd": -2960.3502030721315
+   }
+  },
+  "power": {
+   "active_players_per_month": 23298,
+   "players_per_arm": 11649,
+   "mde_80pct_power_coin_in_per_player_usd": 50.938311519206046,
+   "mde_as_pct_of_mean_coin_in": 0.05363617641056312,
+   "mde_visits_pct": 0.04893031197373526,
+   "comp_cost_per_player_effect_detectable": "comps per visit / cost per player are far less noisy; the pilot can measure redemption response precisely",
+   "note": "Approximation: variance of 30-day totals scaled to 25 days; heavy-tailed coin-in means a trimmed or log metric would be more powerful."
+  }
+ },
+ "play_response_risk": {
+  "did_log_ci95": [
+   -0.008685691477994431,
+   0.05569690559315396
+  ],
+  "theo_per_day": 84628.5567622951,
+  "A-COMP-CHANGE_P13_theo_change_band_usd_if_reversal_mirrors_did": [
+   -127265.8158848094,
+   19846.553425161335
+  ],
+  "note": "The May 1 generosity increase had no detectable effect on carded play; we assume restoring the old price also has none (central = 0) but show the house theo change (negative = house loses theo) implied by mirroring the DiD 95% CI. This band dwarfs the comp savings, which is why a controlled pilot is the only way to learn the play response."
+ },
+ "catalog_rows": [
+  {
+   "action_type_id": "A-COMP-PILOT",
+   "name": "Comp policy pilot with control group",
+   "unit": "pilot",
+   "unit_cost_cents": 400000,
+   "recurring_cost_cents_per_day": 0,
+   "lead_days": 5,
+   "downtime_minutes": 0,
+   "quantity_limit": 1,
+   "incompatibility_group": "comp_policy",
+   "notes": "Design, training and tracking only; comp costs still flow through POS cogs."
+  },
+  {
+   "action_type_id": "A-COMP-CHANGE",
+   "name": "Change comp redemption rate floor-wide",
+   "unit": "policy",
+   "unit_cost_cents": 150000,
+   "recurring_cost_cents_per_day": 0,
+   "lead_days": 3,
+   "downtime_minutes": 0,
+   "quantity_limit": 1,
+   "incompatibility_group": "comp_policy",
+   "notes": "Point cost per comp dollar can be set between 5 and 20."
+  }
+ ]
+}

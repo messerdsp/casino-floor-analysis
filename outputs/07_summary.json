@@ -1,0 +1,258 @@
+{
+ "floor_trend": {
+  "cpah_pct_per_month": -0.010621240259721148,
+  "cpah_ci95": [
+   -0.016981021071946607,
+   -0.004220313942834469
+  ],
+  "coin_in_per_day_pct_per_month": -0.0039939543010787575,
+  "coin_in_ci95": [
+   -0.010449288116797626,
+   0.002503490883134868
+  ],
+  "monthly_coin_in_per_day": {
+   "2025-01": 1344417,
+   "2025-02": 1413478,
+   "2025-03": 1407981,
+   "2025-04": 1376286,
+   "2025-05": 1386593,
+   "2025-06": 1324352
+  },
+  "monthly_coin_in_per_day_clean_weekday_adj": {
+   "2025-01": 1345739,
+   "2025-02": 1345592,
+   "2025-03": 1363997,
+   "2025-04": 1385606,
+   "2025-05": 1342672,
+   "2025-06": 1308129
+  },
+  "monthly_cpah": {
+   "2025-01": 187.5,
+   "2025-02": 197.1,
+   "2025-03": 195.3,
+   "2025-04": 186.8,
+   "2025-05": 188.4,
+   "2025-06": 179.7
+  },
+  "jun_vs_feb_clean_weekday_adj": -0.027841515994110555,
+  "context_lvcva_visitors_per_day_jun_vs_feb": -0.028527225638929177
+ },
+ "weekday_shape": {
+  "weekend_FriSatSun_share_by_month": {
+   "2025-01": 0.4996,
+   "2025-02": 0.5055,
+   "2025-03": 0.4986,
+   "2025-04": 0.5059,
+   "2025-05": 0.503,
+   "2025-06": 0.5033
+  },
+  "max_abs_share_change_any_weekday_vs_jan": 0.004980168427985626
+ },
+ "hour_of_day_shape": {
+  "traffic_max_abs_hour_share_change_vs_jan": 0.004773035571747616,
+  "coin_in_max_abs_hour_share_change_vs_jan": 0.0029113329695401313,
+  "coin_in_evening_17_23_share_by_month": {
+   "2025-01": 0.4787,
+   "2025-02": 0.4725,
+   "2025-03": 0.4702,
+   "2025-04": 0.4722,
+   "2025-05": 0.4756,
+   "2025-06": 0.4678
+  }
+ },
+ "zone_trends_vs_rest_of_floor": {
+  "Z-B40": {
+   "rel_cpah_pct_per_month_ex_closure": -0.010777636789647929,
+   "ci95": [
+    -0.014509933593025326,
+    -0.007031204846908561
+   ]
+  },
+  "Z-BAR": {
+   "rel_cpah_pct_per_month_ex_closure": -0.009138218214748223,
+   "ci95": [
+    -0.01195260820513226,
+    -0.00631581161394271
+   ]
+  },
+  "Z-ENT": {
+   "rel_cpah_pct_per_month_ex_closure": -8.65326710913523e-05,
+   "ci95": [
+    -0.0030827835542424084,
+    0.002918723492745688
+   ]
+  },
+  "Z-GAR": {
+   "rel_cpah_pct_per_month_ex_closure": -0.00742056383119369,
+   "ci95": [
+    -0.010547133266268114,
+    -0.004284114757825215
+   ]
+  },
+  "Z-HL": {
+   "rel_cpah_pct_per_month_ex_closure": -0.01456267637992735,
+   "ci95": [
+    -0.025167667597264645,
+    -0.0038423157447101623
+   ]
+  },
+  "Z-HTL": {
+   "rel_cpah_pct_per_month_ex_closure": -0.004021616911215388,
+   "ci95": [
+    -0.0076259832811013065,
+    -0.0004041592504356207
+   ]
+  },
+  "Z-PIT": {
+   "rel_cpah_pct_per_month_ex_closure": 0.01730154271840876,
+   "ci95": [
+    0.013567639165346815,
+    0.021049201678810903
+   ]
+  }
+ },
+ "zone_period_cpah": {
+  "Z-B40": {
+   "pre": 134.6,
+   "closed": 96.3,
+   "post": 124.1
+  },
+  "Z-BAR": {
+   "pre": 195.3,
+   "closed": 198.3,
+   "post": 182.5
+  },
+  "Z-ENT": {
+   "pre": 232.3,
+   "closed": 239.1,
+   "post": 222.9
+  },
+  "Z-GAR": {
+   "pre": 184.8,
+   "closed": 186.8,
+   "post": 172.1
+  },
+  "Z-HL": {
+   "pre": 175.7,
+   "closed": 184.5,
+   "post": 156.2
+  },
+  "Z-HTL": {
+   "pre": 199.6,
+   "closed": 204.0,
+   "post": 187.6
+  },
+  "Z-PIT": {
+   "pre": 216.4,
+   "closed": 227.7,
+   "post": 217.0
+  }
+ },
+ "zone_period_traffic_per_day": {
+  "Z-B40": {
+   "pre": 605.0,
+   "closed": 422.0,
+   "post": 546.0
+  },
+  "Z-BAR": {
+   "pre": 2790.0,
+   "closed": 3176.0,
+   "post": 2706.0
+  },
+  "Z-ENT": {
+   "pre": 2872.0,
+   "closed": 2511.0,
+   "post": 2762.0
+  },
+  "Z-GAR": {
+   "pre": 2330.0,
+   "closed": 2330.0,
+   "post": 2240.0
+  },
+  "Z-HL": {
+   "pre": 167.0,
+   "closed": 182.0,
+   "post": 150.0
+  },
+  "Z-HTL": {
+   "pre": 2073.0,
+   "closed": 2073.0,
+   "post": 1967.0
+  },
+  "Z-PIT": {
+   "pre": 4166.0,
+   "closed": 4399.0,
+   "post": 4051.0
+  }
+ },
+ "pit_expansion_2025_03_24": {
+  "new_machines": 8,
+  "windows": [
+   "2025-01-27..2025-03-02",
+   "2025-04-07..2025-05-11"
+  ],
+  "pit_zone_coin_in_per_day_change": 0.11338788310685866,
+  "control_zones_coin_in_per_day_change": -0.05570821066178833,
+  "pit_total_did": 0.1790718670625684,
+  "pit_incumbent_cpah_change": -0.04646481013760717,
+  "control_cpah_change": -0.057937696973022534,
+  "pit_incumbent_cpah_did": 0.012178479914281004,
+  "new_machines_cpah_post": 312.7903904169779,
+  "note": "Control zones BAR/ENT/GAR/HTL; windows avoid the B40 closure. Single pre/post comparison, no CI."
+ },
+ "weather": {
+  "coin_in_pct_per_1C_tmax_within_month": 0.0005139201154420846,
+  "tmax_p": 0.5401744798246565,
+  "coin_in_pct_rain_day": -0.05181803414714564,
+  "rain_p": 0.01347637579289352,
+  "rain_days": 7,
+  "note": "calendar-date weather aligned to gaming date; month FE so seasonal heat is absorbed"
+ },
+ "federal_holidays_coin_in_uplift_vs_same_weekday": {
+  "2025-01-01 New Year's Day (Wed)": -0.0936,
+  "2025-01-20 Martin Luther King Jr. Day (Mon)": 0.0399,
+  "2025-02-17 Washington's Birthday (Mon)": 0.0074,
+  "2025-05-26 Memorial Day (Mon)": 0.0198,
+  "2025-06-19 Juneteenth (Thu)": -0.0693
+ },
+ "headline": {
+  "b40_closure_cpah_effect": -0.30655426655998763,
+  "b40_closure_cpah_ci95": [
+   -0.3323929256519558,
+   -0.276912438427264
+  ],
+  "b40_closure_cpah_effect_regression": -0.31294388747245,
+  "b40_closure_traffic_effect": -0.3144414521988629,
+  "b40_closure_traffic_ci95": [
+   -0.3402264434382415,
+   -0.29013260897160054
+  ],
+  "b40_closure_lost_coin_in": 1676044.8654813329,
+  "b40_closure_lost_theo": 163142.75920615852,
+  "b40_structural_gap_pre": -0.3496519298467464,
+  "b40_structural_gap_pre_ci95": [
+   -0.3636521836660831,
+   -0.33693615170574975
+  ],
+  "b40_structural_gap_post": -0.3780922781852094,
+  "b40_within_config_ratio_pre": 0.6573300053389975,
+  "b40_post_vs_pre_residual": -0.04373096445379021,
+  "b40_post_vs_pre_ci95": [
+   -0.0640978681311999,
+   -0.02107628693954692
+  ],
+  "promo_TOURN_coin_in_uplift": 0.18020756263270266,
+  "promo_TOURN_incremental_theo": 82374.62658333324,
+  "promo_TOURN_incremental_theo_ci95": [
+   63799.45334570662,
+   99097.69065779996
+  ],
+  "promo_LOCALS_coin_in_uplift": 0.05562789420028902,
+  "promo_LOCALS_incremental_theo": 47291.872966666706,
+  "promo_LOCALS_incremental_theo_ci95": [
+   14330.999707399205,
+   79109.93479782264
+  ],
+  "promo_action_cost_usd": 15000
+ }
+}

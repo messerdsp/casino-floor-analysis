@@ -1,0 +1,82 @@
+{
+ "scope": "Loyalty program, tracked (carded) players, gaming dates 2025-01-01..2025-06-30",
+ "totals": {
+  "comps_redeemed": 59361,
+  "comp_economic_cost_usd": 190669.3,
+  "comp_face_value_usd_not_revenue": 682749.5,
+  "points_earned": 163617200,
+  "points_redeemed": 7172979,
+  "share_of_earned_points_redeemed": 0.043840005818459184,
+  "carded_theo_usd": 15485020.980500001,
+  "reinvestment_6m": 0.01231314444068925,
+  "reinvestment_pre_JanApr": 0.011939768715571234,
+  "reinvestment_post_MayJun": 0.013059750882398077,
+  "econ_cost_per_face_dollar": 0.2792668467717662,
+  "points_earned_per_usd_coin_in": 0.9988543097015309
+ },
+ "reconciliation": {
+  "ledger_econ": 190669.3,
+  "fnb_comp_cogs": 190669.3,
+  "pp_comp_cost": 190669.3,
+  "prop_comp_cost": 190669.3,
+  "prop_pos_cogs_incl_comps": 937936.2,
+  "ledger_face": 682749.5,
+  "mismatched_links": 0.0,
+  "comp_tickets_with_cash": 0.0,
+  "ledger_events_outside_window": 1,
+  "note": "ledger economic cost == comp-ticket POS cogs == player_period comp_cost == property_day comp_cost; counted once."
+ },
+ "change": {
+  "date": "2025-05-01",
+  "what": "Points needed per comp dollar (redemption price) was cut ~53% for every tier; earn rate and benefit menu/cost did not change.",
+  "points_per_face_usd": [
+   13.085246907361775,
+   5.778785552766426
+  ],
+  "comp_cost_effect_log_ITS": {
+   "metric": "comp_econ_cost",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 1061.7988764044944,
+   "pre_trend_per_30d": 0.00605581946114106,
+   "post_level_shift": 0.02061436446612583,
+   "ci95": [
+    -0.037637336388158416,
+    0.07886606532041007
+   ],
+   "p_value": 0.487924751853828,
+   "scale": "log points (~% change)"
+  },
+  "comps_per_visit_ITS": {
+   "metric": "comps_per_visit",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 0.16735112552185955,
+   "pre_trend_per_30d": 0.002631267447073245,
+   "post_level_shift": 0.003534501022968208,
+   "ci95": [
+    -0.0018818939410817801,
+    0.008950895987018197
+   ],
+   "p_value": 0.2008936201478101,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.0211202704012082,
+   "ci95_pct": [
+    -0.011245182458219951,
+    0.05348572326063635
+   ]
+  },
+  "carded_vs_uncarded_coin_in_DiD": {
+   "did_log": 0.023505607057579765,
+   "ci95": [
+    -0.008685691477994431,
+    0.05569690559315396
+   ],
+   "p_value": 0.15238355440165643
+  }
+ },
+ "outstanding_points_end_June": 156444221.0,
+ "outstanding_points_cost_if_redeemed_usd": {
+  "at_post_change_price": 7560357.430709669,
+  "at_pre_change_price": 3338850.5852155886,
+  "note": "Upper bound, not a booked liability: only ~4% of earned points were redeemed and balances reset each year."
+ }
+}

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gilded Ace Floor Review</title>
+<style>
+:root{
+  color-scheme: light;
+  --bg:#f6f6f3; --card:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#76746e; --line:#e3e2dc; --track:#efeee9;
+  --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#6250d6; --s8:#e34948;
+  --crit:#d03b3b; --good:#0ca30c; --warn:#fab219; --neutral:#a3a29b; --accent-soft:#e8f0fb; --warn-soft:#fdf3e1; --crit-soft:#fbe9e9;
+}
+@media (prefers-color-scheme: dark){
+  :root:where(:not([data-theme="light"])){
+    color-scheme: dark;
+    --bg:#121211; --card:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#9d9b92; --line:#2e2e2b; --track:#252523;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --neutral:#6d6c66; --accent-soft:#1d2a3a; --warn-soft:#33291a; --crit-soft:#3a2020;
+  }
+}
+:root[data-theme="dark"]{
+    color-scheme: dark;
+    --bg:#121211; --card:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#9d9b92; --line:#2e2e2b; --track:#252523;
+    --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9; --s8:#e66767;
+    --neutral:#6d6c66; --accent-soft:#1d2a3a; --warn-soft:#33291a; --crit-soft:#3a2020;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+header.top{background:var(--card);border-bottom:1px solid var(--line)}
+header.top .wrap{padding:22px 16px 14px}
+h1{font-size:30px;line-height:1.15;margin:4px 0 6px}
+h2{font-size:22px;margin:0 0 4px}
+h3{font-size:16px;margin:16px 0 6px}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.lede{color:var(--ink2);max-width:900px;margin:0}
+.bar{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:8px 16px}
+.bar label{font-size:13px;color:var(--ink2);display:flex;gap:6px;align-items:center}
+.bar input,.bar select,.bar button{font:inherit;font-size:13px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:4px 6px}
+.bar button{cursor:pointer}
+.bar button:hover{border-color:var(--s1)}
+.navlinks{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:13px;width:100%;padding-top:2px}
+.navlinks a{color:var(--s1);text-decoration:none}
+.navlinks a:hover{text-decoration:underline}
+.rangeinfo{font-size:12px;color:var(--muted)}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0;scroll-margin-top:110px}
+.q{display:inline-block;font-size:12px;font-weight:700;color:var(--card);background:var(--ink2);border-radius:4px;padding:1px 7px;margin-right:6px;vertical-align:2px}
+.caption{color:var(--ink2);font-size:14px;max-width:950px}
+.answer{background:var(--accent-soft);border-left:4px solid var(--s1);padding:10px 14px;border-radius:6px;margin:10px 0;max-width:980px}
+.answer.warn{background:var(--warn-soft);border-left-color:var(--s4)}
+.answer.crit{background:var(--crit-soft);border-left-color:var(--crit)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:12px 0}
+.kpi{border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--bg)}
+.kpi .l{font-size:12px;color:var(--ink2)}
+.kpi .v{font-size:24px;font-variant-numeric:tabular-nums;margin-top:2px}
+.kpi .f{font-size:12px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+td b{white-space:nowrap}
+.chart{width:100%;height:360px}
+.chart.tall{height:440px}
+.chart.short{height:280px}
+.tablewrap{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:13px;font-variant-numeric:tabular-nums}
+th{text-align:left;color:var(--ink2);font-weight:600;border-bottom:2px solid var(--line);padding:6px 8px;white-space:nowrap;position:sticky;top:0;background:var(--card)}
+td{border-bottom:1px solid var(--line);padding:6px 8px;vertical-align:top}
+td.num,th.num{text-align:right}
+tr.hl td{background:var(--warn-soft)}
+.pill{display:inline-block;border-radius:10px;padding:1px 8px;font-size:12px;border:1px solid var(--line);white-space:nowrap}
+.pill.lead{background:var(--crit-soft);border-color:var(--crit)}
+.pill.true{background:var(--warn-soft);border-color:var(--s4)}
+.pill.loc{background:var(--accent-soft);border-color:var(--s1)}
+.pill.luck{background:var(--track)}
+.pill.short{background:var(--track);border-style:dashed}
+.evid{font-size:13px}
+.evid a{color:var(--s1)}
+details{margin:8px 0}
+summary{cursor:pointer;color:var(--s1);font-size:14px}
+.note{font-size:12px;color:var(--muted)}
+.flag{font-size:12px;color:var(--ink2);border:1px dashed var(--line);border-radius:6px;padding:2px 6px;margin-left:6px}
+.filtered::after{content:"⧉ follows date filter";font-size:11px;color:var(--muted);margin-left:8px;font-weight:400}
+.filtered.bank::after{content:"⧉ follows date + bank filter"}
+.filtered.guest::after{content:"⧉ follows guest-group filter (+ months in date filter)"}
+.fixed::after{content:"◼ full period Jan–Jun, not filtered";font-size:11px;color:var(--muted);margin-left:8px;font-weight:400}
+.rangewarn{color:var(--crit);font-weight:600}
+dl.gloss{display:grid;grid-template-columns:minmax(120px,max-content) minmax(0,1fr);gap:4px 14px;font-size:14px;color:var(--ink2)}dl.gloss dt{font-weight:600;color:var(--ink)}dl.gloss dd{margin:0}
+:target{outline:3px solid var(--s4);outline-offset:4px}
+.flash{animation:flash 1.6s ease-out}
+@keyframes flash{0%{box-shadow:0 0 0 4px var(--s4)}100%{box-shadow:0 0 0 0 transparent}}
+footer{color:var(--muted);font-size:12px;padding:20px 0 40px}
+@media (max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}section{padding:14px 12px}h1{font-size:24px}.chart{height:320px}}
+</style>
+<script>/*__PLOTLY__*/</script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="eyebrow">The Gilded Ace · floor analytics · Jan 1 – Jun 30, 2025 (fictional casino, synthetic data)</div>
+  <h1>Don't replace the bottom 10. Inspect one machine, fix the weak titles, and fix the Back Forty.</h1>
+  <p class="lede">The general manager wants to replace the 10 machines that earned the least. We tested each one for <b>luck</b> (actual vs. expected win, with uncertainty based on the game's volatility), <b>location</b> (zone, bank, moves, foot traffic), <b>availability</b> (downtime and repair staffing) and a <b>leak</b> (paying out more than the published game math allows). Read top to bottom: the manager's list → the evidence → the machines that are actually weak → the other questions → the forecast → the $100,000 plan.</p>
+</div></header>
+
+<div class="bar"><div class="wrap">
+  <label>From <input type="date" id="f-from"></label>
+  <label>To <input type="date" id="f-to"></label>
+  <span>
+    <button data-preset="all">Full Jan–Jun</button>
+    <button data-preset="q1">Jan–Mar</button>
+    <button data-preset="q2">Apr–Jun</button>
+    <button data-preset="train">Jan–Apr (training)</button>
+    <button data-preset="test">May–Jun (holdout)</button>
+  </span>
+  <label>Bank <select id="f-bank"></select></label>
+  <label>Guest group <select id="f-group"></select></label>
+  <button id="f-reset">Reset</button>
+  <span class="rangeinfo" id="rangeinfo"></span>
+  <nav class="navlinks">
+    <a href="#s-summary">Summary</a><a href="#s-bottom10">1 Manager's bottom 10</a><a href="#s-luck">2 Luck</a>
+    <a href="#s-location">3 Location</a><a href="#s-availability">4 Availability</a><a href="#s-leak">5 Leak</a>
+    <a href="#s-true">6 Weak for their spot</a><a href="#s-demand">Q2 Demand</a><a href="#s-downtime">Q3 Downtime</a>
+    <a href="#s-players">Q4 Players</a><a href="#s-comps">Q5 Comps</a><a href="#s-model">Model validation</a>
+    <a href="#s-plan">Q6 $100k plan</a><a href="#s-glossary">Glossary</a><a href="#s-methods">Methods</a>
+  </nav>
+</div></div>
+
+<main class="wrap">
+
+<section id="s-summary">
+  <h2>Summary for the selected period</h2>
+  <p class="caption filtered">Totals for the dates chosen above. Hold = total house win ÷ total coin-in (ratio of sums). Theo = coin-in × (1 − published payout rate): what the house should win on average.</p>
+  <div class="kpis" id="kpis"></div>
+  <div id="summary-answers"></div>
+</section>
+
+<section id="s-bottom10">
+  <h2>1 · The manager's bottom 10, re-examined</h2>
+  <p class="caption filtered">Same ranking as the manager's query (lowest total house win, on-floor days only) for the selected dates. Our columns show why each machine is low. "Luck" is house win minus theo with a 95% range; z beyond ±1.96 is unusual, beyond ±3 is a red flag.</p>
+  <div class="tablewrap"><table id="t-bottom10"></table></div>
+  <div id="bottom10-answer"></div>
+</section>
+
+<section id="s-luck">
+  <h2>2 · Luck: who is just unlucky?</h2>
+  <p class="caption filtered bank">Each dot is a machine. Up = earned more than expected, down = less, measured in standard deviations of that game's own volatility (high-volatility games swing more, so the same dollar shortfall counts for less). With 310 machines about 15 should fall outside ±1.96 by chance alone. Orange = manager's bottom 10; red = payout lead; outlined = selected bank.</p>
+  <div id="c-luck" class="chart tall"></div>
+  <div id="luck-answer"></div>
+</section>
+
+<section id="s-location">
+  <h2>3 · Location: the Back Forty is the problem, not its machines</h2>
+  <div class="grid2">
+    <div><h3>Effect of zone and game title on expected win per available hour</h3>
+      <p class="caption fixed">Regression of log(theo per available hour) on zone + title (machine-days at each machine's actual location; 95% CI bars). Center Pit and Desert Gold are the reference (0%).</p>
+      <div id="c-effects" class="chart tall"></div></div>
+    <div><h3 class="filtered">Coin-in per available machine-hour by zone, 7-day rolling</h3>
+      <p class="caption">Shaded: walkway from the Main Entrance to the Back Forty closed for renovation (Mar 3 – Apr 7).</p>
+      <div id="c-zones" class="chart tall"></div></div>
+  </div>
+  <div id="location-answer"></div>
+  <h3 id="bank-drill" class="filtered bank">Bank drill-down: <span id="bank-title">pick a bank in the filter bar</span></h3>
+  <p class="caption">The selected bank vs. its zone and the whole floor (coin-in per available machine-hour, 7-day rolling), and its machines for the selected dates.</p>
+  <div class="grid2"><div id="c-bank" class="chart"></div><div class="tablewrap" style="max-height:360px;overflow-y:auto"><table id="t-bank"></table></div></div>
+  <!--__LOCATION_EXTRA__-->
+</section>
+
+<section id="s-availability">
+  <h2>4 · Availability: is the machine broken too often?</h2>
+  <p class="caption fixed">Availability = available hours ÷ scheduled hours (23 h on Mar 8). Lost play is valued at each down machine's own expected win for that hour of day.</p>
+  <div class="kpis" id="avail-kpis"></div>
+  <div id="avail-answer"></div>
+</section>
+
+<section id="s-leak">
+  <h2>5 · Leak: is any machine paying out more than its game math allows?</h2>
+  <p class="caption fixed">Two independent tests per machine. (1) Payout: house win vs. theo in volatility-scaled standard deviations. (2) Hit rate: share of spins that pay anything vs. the published hit probability (a binomial test that ignores payout size). A machine whose paytable doesn't match its published configuration fails both. Meter checks (hourly meters summing to daily, payouts in valid increments, bets within limits) found 0 problems.</p>
+  <div class="grid2">
+    <div><h3>M-1158 (Desert Gold, bank B-31) by month</h3><div id="c-leak" class="chart"></div></div>
+    <div><h3>Every machine: hit-rate test vs. payout test</h3><div id="c-leak2" class="chart"></div></div>
+  </div>
+  <div id="leak-answer"></div>
+  <h3>By game title (all machines pooled, M-1158 excluded)</h3>
+  <div class="tablewrap"><table id="t-titles"></table></div>
+  <p class="note">An unusual pattern is a lead to inspect, not proof of wrongdoing. A mis-set or mis-documented paytable, a configuration error, or a meter fault are all possible.</p>
+</section>
+
+<section id="s-true">
+  <h2>6 · Which machines are weak for their spot, and why?</h2>
+  <p class="caption filtered">After removing luck (we use theo, not actual win), downtime (per available hour) and days off the floor, we compare each machine with the other machines in its zone. Replacement value = what an average machine in that zone would have earned per day minus what this one earned (theo). Verdict rules are listed in Methods.</p>
+  <div class="grid2">
+    <div><div id="c-verdicts" class="chart short"></div></div>
+    <div><div class="answer" id="true-answer"></div></div>
+  </div>
+  <div class="tablewrap" style="max-height:440px;overflow-y:auto"><table id="t-true"></table></div>
+</section>
+
+<section id="s-demand"><h2><span class="q">Q2</span>What changed in demand across the floor, and why?</h2><!--__DEMAND__--></section>
+<section id="s-downtime"><h2><span class="q">Q3</span>How much play was lost to downtime, and when?</h2><p class="caption filtered">Daily machine-hours down, split by cause, with expected win (theo) lost. Fault tickets are mapped to the 6 AM–6 AM gaming day.</p>
+  <div id="c-down" class="chart"></div>
+  <div class="grid2">
+   <div><h3 class="fixed">Fault rate by manufacturer (95% CI)</h3><div id="c-mfr" class="chart short"></div></div>
+   <div><h3 id="staffing" class="fixed">Wait for a technician: shift fully staffed vs. short</h3><div id="c-staff" class="chart short"></div></div>
+  </div>
+  <div id="down-answer"></div></section>
+<section id="s-players"><h2><span class="q">Q4</span>What did tracked players wager, get back and net, and how concentrated is it?</h2><p class="caption fixed">Loyalty-card (tracked) play only: 65.8% of all coin-in. Uncarded guests are invisible at the person level. Player view: net = payout − coin-in (negative = player lost).</p>
+  <div class="kpis" id="pl-kpis"></div>
+  <div class="grid2">
+   <div><h3 class="fixed">Concentration (Lorenz curve)</h3><div id="c-lorenz" class="chart"></div></div>
+   <div><h3 class="fixed">Six-month net result per player</h3><div id="c-nethist" class="chart"></div></div>
+  </div>
+  <h3 id="guest-drill" class="filtered guest">Guest group drill-down: <span id="guest-title"></span></h3>
+  <div class="grid2"><div id="c-guest" class="chart"></div><div class="tablewrap"><table id="t-guest"></table></div></div>
+  <div id="pl-answer"></div></section>
+<section id="s-comps"><h2><span class="q">Q5</span>What did the loyalty (comp) program cost, and did anything change?</h2><p class="caption fixed">Comp cost = the house's economic cost of comped food and drink. It is already inside POS cost of goods, so we count it once. Face value is menu price, not revenue. Reinvestment = comp cost ÷ carded theo.</p>
+  <div class="kpis" id="comp-kpis"></div>
+  <div class="grid2">
+   <div><h3 class="filtered">Points charged per $1 of comp face value, daily</h3><div id="c-comprate" class="chart"></div></div>
+   <div><h3 class="filtered">Daily comp cost and reinvestment rate</h3><div id="c-compcost" class="chart"></div></div>
+  </div>
+  <div id="comp-answer"></div></section>
+
+<section id="s-model">
+  <h2>Model validation: forecasting daily floor coin-in</h2>
+  <p class="caption fixed">Trained on gaming days Jan 1 – Apr 30, tested on May 1 – Jun 30 (61 days the model never saw). Both forecasts were frozen on Apr 30 before looking at May–June. No future information: only events announced by Apr 30 were allowed (the June "Locals Appreciation Week" was announced May 26, so the forecast does not know about it).</p>
+  <div class="kpis" id="model-kpis"></div>
+  <div id="c-model" class="chart tall"></div>
+  <div class="grid2">
+    <div><h3>Error by weekday (holdout)</h3><div class="tablewrap"><table id="t-model-wd"></table></div></div>
+    <div><div id="model-method"></div></div>
+  </div>
+  <div id="model-answer"></div>
+</section>
+
+<section id="s-plan">
+  <h2><span class="q">Q6</span>The $100,000 plan (July 1–30, 2025)</h2>
+  <!--__PLAN__-->
+</section>
+
+<section id="s-glossary">
+  <h2>Glossary (plain English)</h2>
+  <dl class="gloss">
+   <dt>Coin-in</dt><dd>Total amount wagered on a machine.</dd>
+   <dt>House win / hold</dt><dd>What the casino kept (coin-in − payouts). Hold = house win ÷ coin-in.</dd>
+   <dt>Theo (expected win)</dt><dd>What the house should keep on average given the game's published payout rate: coin-in × (1 − RTP). It removes luck.</dd>
+   <dt>RTP</dt><dd>Return to player: the share of each dollar a game pays back over the long run (a 95% RTP game keeps 5¢ per dollar).</dd>
+   <dt>Luck</dt><dd>House win − theo. Positive = the house got lucky.</dd>
+   <dt>z (z-score)</dt><dd>How unusual a result is, in standard deviations. Within ±2 is ordinary; beyond ±3 happens by chance about 1 time in 370.</dd>
+   <dt>Hit rate / binomial test</dt><dd>Share of spins that pay anything. A binomial test checks whether the observed share fits the published probability, like checking whether a coin is fair.</dd>
+   <dt>95% CI / range</dt><dd>The range we are 95% confident contains the true value.</dd>
+   <dt>Available hour</dt><dd>An hour the machine was on the floor and working (scheduled hours minus downtime).</dd>
+   <dt>Occupancy</dt><dd>Share of available hours someone was playing the machine.</dd>
+   <dt>Difference-in-differences</dt><dd>Compares the change in an affected group with the change in an unaffected group over the same dates, so floor-wide swings cancel out.</dd>
+   <dt>MAE</dt><dd>Mean absolute error: the average size of a forecast miss, in dollars per day.</dd>
+   <dt>Seasonal-naive forecast</dt><dd>"Same weekday as last week": a simple forecast any model should beat.</dd>
+   <dt>Lorenz curve / Gini</dt><dd>How concentrated spending is. The curve shows what share of wagers the smallest x% of players place; Gini 0 = everyone equal, 1 = one player does everything.</dd>
+   <dt>Carded play</dt><dd>Play by guests using a loyalty card; the only play we can see per person.</dd>
+  </dl>
+</section>
+
+<section id="s-methods">
+  <h2>Methods, definitions and limitations</h2>
+  <!--__METHODS__-->
+</section>
+<footer>The Gilded Ace is fictional and all casino data is synthetic (TAMU Datathon "Dashboard Royale", data release 0.9.0-draft). Real public context data (LVCVA, NOAA, Missouri Gaming Commission) is used as context only. Every number on this page is reproduced by <code>run_all.py</code> from the raw data; see Methods for the script behind each chart.</footer>
+</main>
+
+<script>
+const FACT = /*__FACT__*/;
+const OUT = /*__OUT__*/;
+</script>
+<script>
+/*__APPJS__*/
+</script>
+</body>
+</html>

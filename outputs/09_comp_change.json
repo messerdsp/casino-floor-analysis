@@ -1,0 +1,641 @@
+{
+ "what_changed": "Points needed per comp dollar (redemption price) was cut ~53% for every tier; earn rate and benefit menu/cost did not change.",
+ "effective": {
+  "gaming_date": "2025-05-01",
+  "gaming_day_start_utc": "2025-05-01 13:00:00",
+  "note": "Switch falls exactly on the 06:00 PDT gaming-day boundary (no redemption between last old-rate and first new-rate).",
+  "switch_instants_by_tier": {
+   "Base": {
+    "last_old_rate_utc": "2025-05-01 09:58:16",
+    "last_old_rate_local": "2025-05-01 02:58:16",
+    "first_new_rate_utc": "2025-05-01 15:44:18",
+    "first_new_rate_local": "2025-05-01 08:44:18"
+   },
+   "Gold": {
+    "last_old_rate_utc": "2025-05-01 10:59:58",
+    "last_old_rate_local": "2025-05-01 03:59:58",
+    "first_new_rate_utc": "2025-05-01 13:32:34",
+    "first_new_rate_local": "2025-05-01 06:32:34"
+   },
+   "Platinum": {
+    "last_old_rate_utc": "2025-05-01 08:58:59",
+    "last_old_rate_local": "2025-05-01 01:58:59",
+    "first_new_rate_utc": "2025-05-01 13:28:22",
+    "first_new_rate_local": "2025-05-01 06:28:22"
+   }
+  },
+  "redemptions_classified_by_rate_that_disagree_with_date_split": 0
+ },
+ "magnitude": {
+  "blended_points_per_face_usd_pre": 13.085246907361775,
+  "blended_points_per_face_usd_post": 5.778785552766426,
+  "blended_pct_change": -0.558373976916303,
+  "per_tier_event_level": [
+   {
+    "tier": "Base",
+    "post": false,
+    "redemptions": 16190,
+    "pts_per_face_usd": 15.019293209478347,
+    "median_pts_per_face_usd": 15.0,
+    "min_rate": 15.0,
+    "max_rate": 15.11111111111111
+   },
+   {
+    "tier": "Base",
+    "post": true,
+    "redemptions": 6295,
+    "pts_per_face_usd": 7.016345554632323,
+    "median_pts_per_face_usd": 7.0,
+    "min_rate": 7.0,
+    "max_rate": 7.111111111111111
+   },
+   {
+    "tier": "Gold",
+    "post": false,
+    "redemptions": 19987,
+    "pts_per_face_usd": 12.0,
+    "median_pts_per_face_usd": 12.0,
+    "min_rate": 12.0,
+    "max_rate": 12.0
+   },
+   {
+    "tier": "Gold",
+    "post": true,
+    "redemptions": 9807,
+    "pts_per_face_usd": 5.6487132245816465,
+    "median_pts_per_face_usd": 5.655172413793103,
+    "min_rate": 5.611111111111111,
+    "max_rate": 5.777777777777778
+   },
+   {
+    "tier": "Platinum",
+    "post": false,
+    "redemptions": 2418,
+    "pts_per_face_usd": 9.021199558267103,
+    "median_pts_per_face_usd": 9.0,
+    "min_rate": 9.0,
+    "max_rate": 9.11111111111111
+   },
+   {
+    "tier": "Platinum",
+    "post": true,
+    "redemptions": 4664,
+    "pts_per_face_usd": 4.238082074257662,
+    "median_pts_per_face_usd": 4.222222222222222,
+    "min_rate": 4.206896551724138,
+    "max_rate": 4.363636363636363
+   }
+  ],
+  "implied_exact_rates_points_per_face_usd_rounded_up": {
+   "Base_pre": {
+    "rate_lower_excl": 14.96551724137931,
+    "rate_upper_incl": 15.0,
+    "consistent_single_rate": true
+   },
+   "Base_post": {
+    "rate_lower_excl": 6.9655172413793105,
+    "rate_upper_incl": 7.0,
+    "consistent_single_rate": true
+   },
+   "Gold_pre": {
+    "rate_lower_excl": 11.961538461538462,
+    "rate_upper_incl": 12.0,
+    "consistent_single_rate": true
+   },
+   "Gold_post": {
+    "rate_lower_excl": 5.586206896551724,
+    "rate_upper_incl": 5.611111111111111,
+    "consistent_single_rate": true
+   },
+   "Platinum_pre": {
+    "rate_lower_excl": 8.96551724137931,
+    "rate_upper_incl": 9.0,
+    "consistent_single_rate": true
+   },
+   "Platinum_post": {
+    "rate_lower_excl": 4.1923076923076925,
+    "rate_upper_incl": 4.206896551724138,
+    "consistent_single_rate": true
+   }
+  },
+  "value_per_point_multiplier": 2.2643593170017517,
+  "note": "Blended rate drifts Jan-Apr only because tier mix shifts (Base->Gold upgrades); within-tier rates are constant."
+ },
+ "method1_changepoint_scan": {
+  "points_per_face_usd": {
+   "date": "2025-05-01",
+   "mean_before": 13.057832531481095,
+   "mean_after": 5.77806039415558,
+   "pct_change": -0.5575023358413221,
+   "share_variance_explained": 0.9859966658438463
+  },
+  "points_per_econ_usd": {
+   "date": "2025-05-01",
+   "mean_before": 46.80477045146897,
+   "mean_after": 20.667144572663297,
+   "pct_change": -0.5584393562170615,
+   "share_variance_explained": 0.9838120285853851
+  },
+  "econ_cost_per_face": {
+   "date": "2025-01-20",
+   "mean_before": 0.2772249446286869,
+   "mean_after": 0.2794067487425158,
+   "pct_change": 0.007870157993001614,
+   "share_variance_explained": 0.03695186203678702
+  },
+  "points_earned_per_coin_in_usd": {
+   "date": "2025-04-09",
+   "mean_before": 0.9988317918554211,
+   "mean_after": 0.9989040834794004,
+   "pct_change": 7.237617441568922e-05,
+   "share_variance_explained": 0.0032348665382372355
+  },
+  "reinvestment": {
+   "date": "2025-04-20",
+   "mean_before": 0.011997214715555728,
+   "mean_after": 0.013050454258401734,
+   "pct_change": 0.08779033865921915,
+   "share_variance_explained": 0.20800445970410042
+  },
+  "comps_per_visit": {
+   "date": "2025-04-10",
+   "mean_before": 0.16424670455623197,
+   "mean_after": 0.17616176790120888,
+   "pct_change": 0.07254369807400085,
+   "share_variance_explained": 0.2199768787800539
+  },
+  "comp_share_of_carded_fnb_tickets": {
+   "date": "2025-04-09",
+   "mean_before": 0.3830363309833796,
+   "mean_after": 0.40942225276708466,
+   "pct_change": 0.06888621169684805,
+   "share_variance_explained": 0.27212191066797253
+  }
+ },
+ "method2_event_level": {
+  "per_benefit_before_after": {
+   "COMP-BEER": {
+    "face_pre": 9.0,
+    "face_post": 9.0,
+    "econ_pre": 2.5,
+    "econ_post": 2.5,
+    "pts_per_face_pre": 13.145366553145726,
+    "pts_per_face_post": 5.766703580657069
+   },
+   "COMP-BURGER": {
+    "face_pre": 24.0,
+    "face_post": 24.0,
+    "econ_pre": 8.0,
+    "econ_post": 8.0,
+    "pts_per_face_pre": 13.232934553131598,
+    "pts_per_face_post": 6.00024112654321
+   },
+   "COMP-COCKTAIL": {
+    "face_pre": 16.0,
+    "face_post": 16.0,
+    "econ_pre": 4.2,
+    "econ_post": 4.2,
+    "pts_per_face_pre": 13.041266252119842,
+    "pts_per_face_post": 5.72369105409154
+   },
+   "COMP-COFFEE": {
+    "face_pre": 5.5,
+    "face_post": 5.5,
+    "econ_pre": 0.9,
+    "econ_post": 0.9,
+    "pts_per_face_pre": 12.9978287092883,
+    "pts_per_face_post": 5.6311204323626685
+   },
+   "COMP-PASTA": {
+    "face_pre": 26.0,
+    "face_post": 26.0,
+    "econ_pre": 7.6,
+    "econ_post": 7.6,
+    "pts_per_face_pre": 13.173462335867312,
+    "pts_per_face_post": 5.958144796380091
+   },
+   "COMP-PASTRY": {
+    "face_pre": 6.5,
+    "face_post": 6.5,
+    "econ_pre": 1.6,
+    "econ_post": 1.6,
+    "pts_per_face_pre": 12.942898049497034,
+    "pts_per_face_post": 5.71560650887574
+   },
+   "COMP-SALAD": {
+    "face_pre": 18.0,
+    "face_post": 18.0,
+    "econ_pre": 5.2,
+    "econ_post": 5.2,
+    "pts_per_face_pre": 13.304432855280313,
+    "pts_per_face_post": 5.892580287929126
+   },
+   "COMP-SANDWICH": {
+    "face_pre": 14.5,
+    "face_post": 14.5,
+    "econ_pre": 4.8,
+    "econ_post": 4.8,
+    "pts_per_face_pre": 12.81998606935346,
+    "pts_per_face_post": 5.595050353906421
+   },
+   "COMP-SODA": {
+    "face_pre": 4.5,
+    "face_post": 4.5,
+    "econ_pre": 0.6,
+    "econ_post": 0.6,
+    "pts_per_face_pre": 13.298418209876543,
+    "pts_per_face_post": 5.879595959595959
+   },
+   "COMP-WINE": {
+    "face_pre": 14.0,
+    "face_post": 14.0,
+    "econ_pre": 4.5,
+    "econ_post": 4.5,
+    "pts_per_face_pre": 13.107209562943593,
+    "pts_per_face_post": 5.763881307993847
+   }
+  },
+  "same_player_same_benefit_same_tier_points_ratio_post_over_pre": {
+   "pairs": 3216.0,
+   "mean_ratio": 0.471790366522405,
+   "p05": 0.46564885496183206,
+   "p95": 0.48148148148148145
+  },
+  "earn_rate_points_per_usd_coin_in_by_tier": [
+   {
+    "tier": "Base",
+    "post": false,
+    "pts_per_usd": 0.999192496498636,
+    "n": 237841
+   },
+   {
+    "tier": "Base",
+    "post": true,
+    "pts_per_usd": 0.9993700539949177,
+    "n": 83129
+   },
+   {
+    "tier": "Gold",
+    "post": false,
+    "pts_per_usd": 0.9987320983946909,
+    "n": 217114
+   },
+   {
+    "tier": "Gold",
+    "post": true,
+    "pts_per_usd": 0.9986459767762043,
+    "n": 108235
+   },
+   {
+    "tier": "Platinum",
+    "post": false,
+    "pts_per_usd": 0.9989665641306473,
+    "n": 26320
+   },
+   {
+    "tier": "Platinum",
+    "post": true,
+    "pts_per_usd": 0.9988864233156876,
+    "n": 50772
+   }
+  ],
+  "awards_without_matching_session": 0
+ },
+ "not_changed": {
+  "benefit_face_and_economic_cost": "identical before/after for all 10 benefits",
+  "earn_rate": "~1 point per $1 carded coin-in (floored per segment), same in all tiers, before and after",
+  "available_at_vs_event_at_lag": [
+   {
+    "event_type": "award",
+    "n": 723412,
+    "mean_lag_s": 0.0,
+    "max_lag_s": 0,
+    "n_lagged": 0
+   },
+   {
+    "event_type": "redeem",
+    "n": 59361,
+    "mean_lag_s": 0.0,
+    "max_lag_s": 0,
+    "n_lagged": 0
+   }
+  ],
+  "lag_conclusion": "available_at_utc == event_at_utc for every ledger row: no reporting-lag pattern."
+ },
+ "effect_on_redemption_and_play_ITS": {
+  "comps_per_visit": {
+   "metric": "comps_per_visit",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 0.16735112552185955,
+   "pre_trend_per_30d": 0.002631267447073245,
+   "post_level_shift": 0.003534501022968208,
+   "ci95": [
+    -0.0018818939410817801,
+    0.008950895987018197
+   ],
+   "p_value": 0.2008936201478101,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.0211202704012082,
+   "ci95_pct": [
+    -0.011245182458219951,
+    0.05348572326063635
+   ]
+  },
+  "reinvestment": {
+   "metric": "reinvestment",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 0.012227997669226547,
+   "pre_trend_per_30d": 0.00016967848699990965,
+   "post_level_shift": 0.0004306343506628485,
+   "ci95": [
+    -9.222697281660689e-05,
+    0.0009534956741423038
+   ],
+   "p_value": 0.10646722452623136,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.035217078242221096,
+   "ci95_pct": [
+    -0.007542279227670191,
+    0.07797643571211238
+   ]
+  },
+  "comp_econ_cost": {
+   "metric": "comp_econ_cost",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 1061.7988764044944,
+   "pre_trend_per_30d": 0.00605581946114106,
+   "post_level_shift": 0.02061436446612583,
+   "ci95": [
+    -0.037637336388158416,
+    0.07886606532041007
+   ],
+   "p_value": 0.487924751853828,
+   "scale": "log points (~% change)"
+  },
+  "comps_redeemed": {
+   "metric": "comps_redeemed",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 330.60674157303373,
+   "pre_trend_per_30d": 0.004183941734306612,
+   "post_level_shift": 0.01546642369362583,
+   "ci95": [
+    -0.04043544527565826,
+    0.07136829266290992
+   ],
+   "p_value": 0.5876290204342436,
+   "scale": "log points (~% change)"
+  },
+  "comp_share_of_carded_fnb_tickets": {
+   "metric": "comp_share_of_carded_fnb_tickets",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 0.39021648116636004,
+   "pre_trend_per_30d": 0.0072812535415060445,
+   "post_level_shift": 0.0036373119148043146,
+   "ci95": [
+    -0.008497930036056008,
+    0.01577255386566464
+   ],
+   "p_value": 0.5568858376378292,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.009321266759241848,
+   "ci95_pct": [
+    -0.021777475955540446,
+    0.040420009474024146
+   ]
+  },
+  "carded_fnb_tickets_per_visit": {
+   "metric": "carded_fnb_tickets_per_visit",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 0.4289516693038471,
+   "pre_trend_per_30d": -0.0011347623112448954,
+   "post_level_shift": 0.004704172514523118,
+   "ci95": [
+    -0.0045451727158988976,
+    0.013953517744945134
+   ],
+   "p_value": 0.3188389863388832,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.010966672590778348,
+   "ci95_pct": [
+    -0.010596001930183266,
+    0.032529347111739965
+   ]
+  },
+  "carded_cash_tickets_per_visit": {
+   "metric": "carded_cash_tickets_per_visit",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 0.2616005437819876,
+   "pre_trend_per_30d": -0.0037660297583181276,
+   "post_level_shift": 0.0011696714915549406,
+   "ci95": [
+    -0.007672886778555081,
+    0.010012229761664961
+   ],
+   "p_value": 0.7954316326530068,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.004471212003785895,
+   "ci95_pct": [
+    -0.029330545982922358,
+    0.03827296999049414
+   ]
+  },
+  "visits": {
+   "metric": "visits",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 1973.426966292135,
+   "pre_trend_per_30d": -0.01114436640519234,
+   "post_level_shift": -0.0054570571219793584,
+   "ci95": [
+    -0.050599353570615534,
+    0.03968523932665682
+   ],
+   "p_value": 0.8127064959343553,
+   "scale": "log points (~% change)"
+  },
+  "carded_coin_in": {
+   "metric": "carded_coin_in",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 919231.2140449438,
+   "pre_trend_per_30d": -0.005399230978516079,
+   "post_level_shift": -0.014976218301969713,
+   "ci95": [
+    -0.06470444277596539,
+    0.034752006172025965
+   ],
+   "p_value": 0.5550054861306568,
+   "scale": "log points (~% change)"
+  },
+  "carded_coin_in_per_visit": {
+   "metric": "carded_coin_in_per_visit",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 465.24357747825684,
+   "pre_trend_per_30d": 0.005745135426676262,
+   "post_level_shift": -0.00951916117999152,
+   "ci95": [
+    -0.02522329846659253,
+    0.00618497610660949
+   ],
+   "p_value": 0.23480729929767863,
+   "scale": "log points (~% change)"
+  },
+  "carded_theo": {
+   "metric": "carded_theo",
+   "pre_window_start": "2025-02-01",
+   "pre_mean": 86989.86817415731,
+   "pre_trend_per_30d": -0.007398580415519884,
+   "post_level_shift": -0.013304318993064279,
+   "ci95": [
+    -0.06313241166112753,
+    0.03652377367499897
+   ],
+   "p_value": 0.6007456121325923,
+   "scale": "log points (~% change)"
+  }
+ },
+ "ITS_robustness_pre_window_from_Jan6": {
+  "comps_per_visit": {
+   "metric": "comps_per_visit",
+   "pre_window_start": "2025-01-06",
+   "pre_mean": 0.16567264727988656,
+   "pre_trend_per_30d": 0.0034335319937801936,
+   "post_level_shift": 0.0017205488919624426,
+   "ci95": [
+    -0.0037237725688076618,
+    0.007164870352732547
+   ],
+   "p_value": 0.5356452459491794,
+   "scale": "level",
+   "shift_pct_of_pre_mean": 0.010385232083940541,
+   "ci95_pct": [
+    -0.022476689000549006,
+    0.04324715316843009
+   ]
+  },
+  "comp_econ_cost": {
+   "metric": "comp_econ_cost",
+   "pre_window_start": "2025-01-06",
+   "pre_mean": 1037.5504347826088,
+   "pre_trend_per_30d": 0.026290680635893515,
+   "post_level_shift": -0.020623717349102462,
+   "ci95": [
+    -0.07333453417774,
+    0.032087099479535065
+   ],
+   "p_value": 0.4431572112388311,
+   "scale": "log points (~% change)"
+  }
+ },
+ "ITS_placebo_fake_change_2025-04-01": {
+  "comps_per_visit": {
+   "fake_date": "2025-04-01",
+   "shift": -0.0021922103643125515,
+   "ci95": [
+    -0.009049359970798058,
+    0.004664939242172955
+   ],
+   "p_value": 0.5309174169526771
+  },
+  "comp_econ_cost_log": {
+   "fake_date": "2025-04-01",
+   "shift": -0.008790359595291168,
+   "ci95": [
+    -0.09944775428619862,
+    0.08186703509561627
+   ],
+   "p_value": 0.8492728289015515
+  }
+ },
+ "DiD_carded_vs_uncarded": {
+  "coin_in": {
+   "comparison": "carded vs uncarded coin-in (log ratio)",
+   "with_trend": {
+    "did_log": 0.03288603276023881,
+    "ci95": [
+     -0.02907970611247309,
+     0.09485177163295072
+    ],
+    "p_value": 0.29824802122011596
+   },
+   "no_trend": {
+    "did_log": 0.023505607057579765,
+    "ci95": [
+     -0.008685691477994431,
+     0.05569690559315396
+    ],
+    "p_value": 0.15238355440165643
+   }
+  },
+  "fnb_cash": {
+   "comparison": "carded vs uncarded F&B cash receipts (log ratio)",
+   "with_trend": {
+    "did_log": 0.07434551972772184,
+    "ci95": [
+     -0.03812847553279816,
+     0.18681951498824184
+    ],
+    "p_value": 0.19512586283739564
+   },
+   "no_trend": {
+    "did_log": 0.04145051555276339,
+    "ci95": [
+     -0.011392011146011967,
+     0.09429304225153876
+    ],
+    "p_value": 0.12418191002614078
+   }
+  }
+ },
+ "DiD_per_player_JanFeb_redeemers_vs_nonredeemers": {
+  "visits_main_MarApr_to_MayJun": {
+   "metric": "visits per player (2 months)",
+   "treated_n": 8893,
+   "control_n": 33246,
+   "treated_pre_mean": 6.746879568199708,
+   "did": -0.011825997043773859,
+   "ci95": [
+    -0.07627198561707176,
+    0.052619991529524034
+   ],
+   "did_pct_of_treated_pre": -0.0017528098618380156
+  },
+  "visits_placebo_JanFeb_to_MarApr": {
+   "metric": "visits per player (2 months)",
+   "treated_n": 8893,
+   "control_n": 33246,
+   "treated_pre_mean": 7.506240863600585,
+   "did": 0.29926229841492025,
+   "ci95": [
+    0.23253400818826658,
+    0.3659905886415739
+   ],
+   "did_pct_of_treated_pre": 0.039868464635355504
+  },
+  "coin_in_main_MarApr_to_MayJun": {
+   "metric": "coin-in per player (2 months)",
+   "treated_n": 8893,
+   "control_n": 33246,
+   "treated_pre_mean": 2929.4200888339146,
+   "did": -26.461181266299697,
+   "ci95": [
+    -68.94574307344726,
+    16.023380540847874
+   ],
+   "did_pct_of_treated_pre": -0.00903290769636008
+  },
+  "coin_in_placebo_JanFeb_to_MarApr": {
+   "metric": "coin-in per player (2 months)",
+   "treated_n": 8893,
+   "control_n": 33246,
+   "treated_pre_mean": 3484.702923647813,
+   "did": -67.10801077491647,
+   "ci95": [
+    -113.53726630800799,
+    -20.678755241824938
+   ],
+   "did_pct_of_treated_pre": -0.01925788574960281
+  },
+  "visits_main_minus_placebo": -0.3110882954586941,
+  "coin_in_main_minus_placebo": 40.64682950861677
+ },
+ "no_tier_control": "All three tiers received the same ~53% cut on the same instant, so no unaffected tier exists; uncarded play/F&B (cannot redeem) and non-redeemers are used as controls instead."
+}

@@ -1,0 +1,31 @@
+outcome,kind,level,effect_pct,lo_pct,hi_pct
+l_theo,zone,Z-B40,-42.82,-44.19,-41.41
+l_theo,zone,Z-BAR,-10.97,-12.61,-9.3
+l_theo,zone,Z-ENT,4.13,2.74,5.53
+l_theo,zone,Z-GAR,-16.84,-18.53,-15.12
+l_theo,zone,Z-HL,-26.41,-27.83,-24.96
+l_theo,zone,Z-HTL,-11.64,-13.76,-9.47
+l_theo,title,Aurora Link,46.08,42.47,49.77
+l_theo,title,Classic Sevens,7.99,5.39,10.66
+l_theo,title,Comet Cash,-27.64,-29.36,-25.87
+l_theo,title,Jackpot Summit,35.09,29.1,41.36
+l_theo,title,Lucky Lanterns,-20.58,-22.76,-18.34
+l_theo,title,Neon Nights,23.5,20.7,26.36
+l_theo,title,Platinum Reels,16.81,13.12,20.61
+l_theo,title,Prairie Thunder,24.66,22.15,27.22
+l_theo,title,Royal Draw,-40.82,-42.51,-39.08
+l_coin,zone,Z-B40,-42.82,-44.19,-41.41
+l_coin,zone,Z-BAR,-10.97,-12.61,-9.3
+l_coin,zone,Z-ENT,4.13,2.74,5.53
+l_coin,zone,Z-GAR,-16.84,-18.53,-15.12
+l_coin,zone,Z-HL,-26.41,-27.83,-24.96
+l_coin,zone,Z-HTL,-11.64,-13.76,-9.47
+l_coin,title,Aurora Link,62.31,58.3,66.41
+l_coin,title,Classic Sevens,54.28,50.55,58.09
+l_coin,title,Comet Cash,-9.55,-11.7,-7.34
+l_coin,title,Jackpot Summit,12.58,7.59,17.8
+l_coin,title,Lucky Lanterns,-0.72,-3.45,2.08
+l_coin,title,Neon Nights,2.91,0.58,5.3
+l_coin,title,Platinum Reels,16.81,13.12,20.61
+l_coin,title,Prairie Thunder,13.33,11.05,15.65
+l_coin,title,Royal Draw,18.36,14.98,21.84

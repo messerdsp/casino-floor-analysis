@@ -1,0 +1,166 @@
+{
+ "budget": 100000,
+ "spent": 28200.0,
+ "kept": 71800.0,
+ "actions": [
+  {
+   "action": "A-INSPECT",
+   "quantity": 2,
+   "targets": [
+    "M-1158",
+    "M-1181"
+   ],
+   "cost": 2400.0,
+   "cause": "Leak: M-1158 hit rate 38.6% vs 31.5% published (z=+124) and hold 3.0% vs 10% (z=\u22124.6)",
+   "benefit_central": 5595.0,
+   "benefit_low": 0.0,
+   "benefit_high": 7994.0,
+   "assumptions": "If the paytable is confirmed wrong and reset, M-1158 returns to its published 10% hold on its own coin-in ($2,871/day) for 28 days. Low = inspection finds nothing (value is information). M-1181 checks whether Comet Cash as a title pays 0.31 pts over spec (title-wide upside \u2248 $7,690 in July if confirmed; not counted in central).",
+   "measurement": "Inspection report (paytable vs. published G-STD90). After reset: daily hit rate must fall back to ~31.5% (binomial test, detectable within ~2 days of play) and hold track 10% within its volatility band.",
+   "evidence": "#s-leak",
+   "gain_per_day_after_july": null,
+   "net_central": 3195.0,
+   "unit_cost_usd": 1200.0,
+   "recurring_usd_per_day": 0.0,
+   "lead_days": 1,
+   "downtime_minutes": 120,
+   "quantity_limit": 15,
+   "effective_days": 29,
+   "name": "Machine inspection and paytable verification"
+  },
+  {
+   "action": "A-MOVE-MACHINE",
+   "quantity": 6,
+   "cost": 10800.0,
+   "targets": [
+    "M-1157 (Jackpot Summit, B40) <-> M-1115 (Royal Draw, Z-PIT)",
+    "M-1154 (Jackpot Summit, B40) <-> M-1200 (Royal Draw, Z-PIT)",
+    "M-1184 (Jackpot Summit, B40) <-> M-1009 (Royal Draw, Z-PIT)"
+   ],
+   "cause": "Location: Back Forty earns 43% less expected win per available hour than Center Pit at the same title (CI 41\u201344%), because fewer guests sit down there (occupancy 0.28 vs 0.42), not because of its games",
+   "benefit_central": 12334.0,
+   "benefit_low": 5522.0,
+   "benefit_high": 17108.0,
+   "gain_per_day_after_july": 451.9940885618531,
+   "queued_for_august": [
+    "M-1071 (Prairie Thunder) <-> M-1262 (Comet Cash, Z-ENT): +$114/day",
+    "M-1014 (Prairie Thunder) <-> M-1300 (Comet Cash, Z-ENT): +$114/day",
+    "M-1129 (Prairie Thunder) <-> M-1190 (Comet Cash, Z-ENT): +$114/day",
+    "M-1079 (Prairie Thunder) <-> M-1124 (Comet Cash, Z-ENT): +$114/day",
+    "M-1146 (Prairie Thunder) <-> M-1155 (Comet Cash, Z-PIT): +$104/day",
+    "M-1194 (Prairie Thunder) <-> M-1086 (Comet Cash, Z-PIT): +$104/day",
+    "M-1040 (Prairie Thunder) <-> M-1139 (Comet Cash, Z-PIT): +$104/day",
+    "M-1092 (Prairie Thunder) <-> M-1298 (Comet Cash, Z-PIT): +$104/day",
+    "M-1221 (Prairie Thunder) <-> M-1064 (Comet Cash, Z-PIT): +$104/day"
+   ],
+   "queued_gain_per_day": 974.1533426608989,
+   "assumptions": "Each machine's expected win per available hour = base \u00d7 zone effect \u00d7 title effect (R\u00b2 0.97). Swapping a strong title out of the Back Forty with a weak title in Center Pit/Main Entrance adds (zone gap) \u00d7 (title gap). 28 effective days after 2-day lead; minus 3 h downtime per moved machine ($322). Low = 5th percentile of parameter draws AND only half the zone effect transfers; high = 95th percentile scaled up by how much the real M-1152 move beat the model. Check: the model predicts +82% for the one real B40\u2192Main Entrance move (M-1152, Feb 4); observed +106% vs floor (95% CI 82\u2013136%). Partners are all machines flagged 'Weak game for its spot' in section 6. Title effects estimated separately in the Back Forty and in prime zones correlate 0.97, so a title keeps its relative earning power when moved; tighter games draw only slightly less play (10% more house edge \u2192 2% less coin-in/h), with no extra penalty in prime zones. Adding 8 machines to Center Pit in March raised zone coin-in ~18% without taking play from existing machines, so we assume no cannibalisation. We fund only the 3 swaps whose gain pays back their two moves inside July; 9 more Back Forty \u2194 prime swaps (Prairie Thunder \u2194 Comet Cash, +$974/day together) gain less than they cost in 28 days and are queued for August.",
+   "measurement": "Difference-in-differences over July: swapped machines' theo per available hour, before vs after, against unmoved machines of the same titles in the same zones; plus total zone coin-in for B40, PIT and ENT to catch cannibalisation. Success = combined theo/h of the 6 moved machines up \u226510% vs control; if met, run the queued swaps in August.",
+   "evidence": "#s-location",
+   "net_central": 1534.0,
+   "unit_cost_usd": 1800.0,
+   "recurring_usd_per_day": 0.0,
+   "lead_days": 2,
+   "downtime_minutes": 180,
+   "quantity_limit": 24,
+   "effective_days": 28,
+   "name": "Relocate one machine"
+  },
+  {
+   "action": "A-PROMO",
+   "quantity": 1,
+   "cost": 15000.0,
+   "targets": [
+    "Slot-tournament weekend Fri Jul 18 \u2013 Sun Jul 20 (after the 14-day lead)"
+   ],
+   "cause": "Demand: the Feb slot tournament added +18% coin-in (CI 14\u201322%) = $82,375 expected win; June Locals Week +5.6% = $47,292",
+   "benefit_central": 82375.0,
+   "benefit_low": 14331.0,
+   "benefit_high": 99098.0,
+   "assumptions": "Same format as the February slot tournament (a 3-day weekend), so central = that event's measured extra expected win and high = its upper 95% bound. Low = the lower 95% bound of the weaker June Locals Week (a 7-day, smaller-lift promotion), in case July responds less. Benefit is theo (expected house win before costs); the $15k covers marketing, prizes and staffing, and free-play prizes are inside it, so benefit \u2212 cost is the July net. Open to all guests; no targeting of heavy losers; responsible-gaming messaging.",
+   "measurement": "Pre-registered: compare Jul 18\u201320 coin-in and theo against the frozen weekday forecast and against matched July weekends (same placebo-window method as for past events); also check the following week for pull-forward.",
+   "evidence": "#s-demand",
+   "gain_per_day_after_july": null,
+   "net_central": 67375.0,
+   "unit_cost_usd": 15000.0,
+   "recurring_usd_per_day": 0.0,
+   "lead_days": 14,
+   "downtime_minutes": 0,
+   "quantity_limit": 2,
+   "effective_days": 16,
+   "name": "Property promotion weekend"
+  }
+ ],
+ "rejected": [
+  {
+   "action": "Add one technician to a shift for 30 days",
+   "cost": 11520.0,
+   "why": "Extra technician recovers only ~$1\u20132k expected win in 23 days (06); downtime is 0.38% of hours.",
+   "evidence": "#s-downtime",
+   "code": "A-TECH-SHIFT"
+  },
+  {
+   "action": "Preventive maintenance sweep for one manufacturer",
+   "cost": 9000.0,
+   "why": "Ridgeline sweep: central ~$8.3k benefit vs $9,000 cost, and no evidence a sweep cuts faults (06).",
+   "evidence": "#s-downtime",
+   "code": "A-PREVENTIVE"
+  },
+  {
+   "action": "Replace a machine with a leased new title",
+   "cost": 3380.0,
+   "why": "The weakest-for-its-spot machine gains ~$244/day \u00d7 16 days \u2248 $3.9k vs $3,380 per unit, before new-title risk. Revisit for August with a full month.",
+   "evidence": "#s-true",
+   "code": "A-REPLACE-LEASE"
+  },
+  {
+   "action": "Replace a machine with a purchased new title",
+   "cost": 22000.0,
+   "why": "$22,000 for 9 effective days; cannot pay back in July.",
+   "evidence": "#s-true",
+   "code": "A-REPLACE-BUY"
+  },
+  {
+   "action": "Change comp redemption rate floor-wide",
+   "cost": 1500.0,
+   "why": "May 1 comp price cut had no detectable effect on play or cost; reverting saves < fee (09). Comps are not why machines earn less.",
+   "evidence": "#s-comps",
+   "code": "A-COMP-CHANGE"
+  },
+  {
+   "action": "Wayfinding and signage refresh for a zone (Back Forty)",
+   "cost": 7500.0,
+   "why": "After the walkway reopened, Back Forty coin-in per machine-hour recovered to ~95% of its pre-closure level and counter traffic to ~93%; signs might close that last gap, but we have no evidence they work, and the zone was already 35% below the floor before the closure. Swaps target the same cause with measured evidence.",
+   "evidence": "#s-location",
+   "code": "A-WAYFINDING"
+  },
+  {
+   "action": "Relocate a whole bank",
+   "cost": 9500.0,
+   "why": "Moving a whole B40 bank needs an empty bank in a strong zone; swaps capture the gain machine by machine.",
+   "evidence": "#s-location",
+   "code": "A-MOVE-BANK"
+  },
+  {
+   "action": "Replace the manager's bottom 10",
+   "cost": 33800.0,
+   "why": "Most are location, luck or short-window cases; one is a payout lead. Replacing them would not fix the cause.",
+   "evidence": "#s-bottom10",
+   "code": ""
+  }
+ ],
+ "total_benefit_central": 100304.0,
+ "total_benefit_low": 19853.0,
+ "total_benefit_high": 124200.0,
+ "kept_reason": "Keep $71,800: the rest of the shortfall is luck (keeping is the right answer for luck) or has no action that pays back in July.",
+ "recovery_cpah": 0.9493076923076921,
+ "recovery_traffic": 0.9298461538461538,
+ "model_check_M1152": {
+  "predicted": 0.8209758585345812,
+  "observed": 1.0592,
+  "ci95": [
+   0.8221,
+   1.3625
+  ]
+ }
+}

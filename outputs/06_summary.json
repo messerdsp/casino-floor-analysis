@@ -1,0 +1,563 @@
+{
+ "scope": "on-floor machine-days (location_id not null), gaming dates 2025-01-01..2025-06-30; ops mapped to gaming days via calendar_day UTC bounds",
+ "reconciliation": {
+  "machine_day_downtime_h": 5021.078888888889,
+  "operations_intervals_h": 5021.078888888889,
+  "abs_diff_h_machine_day_level": 0.0
+ },
+ "total_scheduled_machine_h": 1321908.0,
+ "total_downtime_machine_h": 5021.078888888889,
+ "downtime_share_of_scheduled": 0.0037983572902871372,
+ "downtime_by_cause_h": {
+  "fault_repair": 4934.078888888889,
+  "scheduled_maintenance": 15.0,
+  "move_install_retire": 72.0
+ },
+ "faults": 1207,
+ "lost_theo_usd": {
+  "hourly_method_B_headline": 98885.57886914458,
+  "flat_method_A": 90313.37727067046,
+  "share_of_floor_theo_B": 0.004199789685117852,
+  "method": "B: down seconds x machine's own theo per available second in that local hour of day (machine_hour, theo=coin_in*(1-rtp)); A: downtime hours x machine's own period theo per available hour. Gross: assumes no play moves to neighbours."
+ },
+ "lost_coin_in_usd": {
+  "hourly_method_B": 1061171.3671593175,
+  "flat_method_A": 969708.1577874725
+ },
+ "displacement_test": {
+  "share_of_lost_coin_in_recovered_by_bank_neighbours": 0.3102399048323218,
+  "ci95": [
+   0.174620319899147,
+   0.4404003524766017
+  ],
+  "method": "bank-hours with a fully down machine: neighbours' coin-in minus their own hour-of-day expectation, drift-adjusted, divided by lost coin-in; day-cluster bootstrap"
+ },
+ "monthly": [
+  {
+   "month": "2025-01",
+   "downtime_h": 866.541,
+   "downtime_h_per_day": 27.953,
+   "downtime_share": 0.004,
+   "faults": 221,
+   "lost_theo_hourly_usd": 18144.207
+  },
+  {
+   "month": "2025-02",
+   "downtime_h": 772.491,
+   "downtime_h_per_day": 27.589,
+   "downtime_share": 0.004,
+   "faults": 216,
+   "lost_theo_hourly_usd": 15748.602
+  },
+  {
+   "month": "2025-03",
+   "downtime_h": 979.196,
+   "downtime_h_per_day": 31.587,
+   "downtime_share": 0.004,
+   "faults": 214,
+   "lost_theo_hourly_usd": 18998.666
+  },
+  {
+   "month": "2025-04",
+   "downtime_h": 755.068,
+   "downtime_h_per_day": 25.169,
+   "downtime_share": 0.003,
+   "faults": 183,
+   "lost_theo_hourly_usd": 15788.985
+  },
+  {
+   "month": "2025-05",
+   "downtime_h": 1017.311,
+   "downtime_h_per_day": 32.816,
+   "downtime_share": 0.004,
+   "faults": 192,
+   "lost_theo_hourly_usd": 18678.965
+  },
+  {
+   "month": "2025-06",
+   "downtime_h": 630.473,
+   "downtime_h_per_day": 21.016,
+   "downtime_share": 0.003,
+   "faults": 181,
+   "lost_theo_hourly_usd": 11526.154
+  }
+ ],
+ "monthly_fault_wait_work": [
+  {
+   "month": "2025-01",
+   "faults": 221,
+   "mean_wait": 1.054,
+   "mean_work": 2.867
+  },
+  {
+   "month": "2025-02",
+   "faults": 216,
+   "mean_wait": 0.696,
+   "mean_work": 2.802
+  },
+  {
+   "month": "2025-03",
+   "faults": 214,
+   "mean_wait": 1.306,
+   "mean_work": 3.045
+  },
+  {
+   "month": "2025-04",
+   "faults": 183,
+   "mean_wait": 0.963,
+   "mean_work": 3.141
+  },
+  {
+   "month": "2025-05",
+   "faults": 192,
+   "mean_wait": 2.217,
+   "mean_work": 3.037
+  },
+  {
+   "month": "2025-06",
+   "faults": 181,
+   "mean_wait": 0.625,
+   "mean_work": 2.806
+  }
+ ],
+ "worst_month_by_downtime_per_day": "2025-05",
+ "worst_full_week": {
+  "week_start": "2025-05-19",
+  "downtime_h": 294.07138888888886,
+  "median_week_h": 178.1611111111111,
+  "lost_theo_hourly_usd": 5001.82932704246
+ },
+ "weekly_downtime_h_full_weeks": {
+  "2025-01-06": 209.9,
+  "2025-01-13": 121.6,
+  "2025-01-20": 166.4,
+  "2025-01-27": 165.3,
+  "2025-02-03": 180.5,
+  "2025-02-10": 178.2,
+  "2025-02-17": 234.0,
+  "2025-02-24": 227.1,
+  "2025-03-03": 232.2,
+  "2025-03-10": 172.7,
+  "2025-03-17": 236.7,
+  "2025-03-24": 250.0,
+  "2025-03-31": 138.0,
+  "2025-04-07": 139.4,
+  "2025-04-14": 175.9,
+  "2025-04-21": 164.9,
+  "2025-04-28": 237.6,
+  "2025-05-05": 285.5,
+  "2025-05-12": 239.6,
+  "2025-05-19": 294.1,
+  "2025-05-26": 117.3,
+  "2025-06-02": 187.0,
+  "2025-06-09": 146.9,
+  "2025-06-16": 140.4,
+  "2025-06-23": 129.8
+ },
+ "mean_downtime_h_by_weekday": {
+  "Fri": 32.2,
+  "Mon": 28.2,
+  "Sat": 37.3,
+  "Sun": 35.8,
+  "Thu": 24.6,
+  "Tue": 17.0,
+  "Wed": 18.7
+ },
+ "downtime_h_by_local_hour": [
+  287.4,
+  254.1,
+  224.5,
+  209.6,
+  181.6,
+  164.5,
+  146.2,
+  130.6,
+  121.5,
+  121.7,
+  139.6,
+  167.8,
+  180.8,
+  203.5,
+  215.6,
+  217.8,
+  219.9,
+  212.0,
+  227.0,
+  234.0,
+  263.3,
+  292.9,
+  306.6,
+  298.4
+ ],
+ "manufacturer": {
+  "Halcyon": {
+   "faults_per_machine_30d": 0.3326,
+   "faults_per_machine_30d_lo95_boot": 0.2846,
+   "faults_per_machine_30d_hi95_boot": 0.3806,
+   "rate_ratio_vs_others": 0.3946,
+   "p_rate_ratio_exact": 0.0,
+   "faults_per_1k_occupied_h": 1.3097,
+   "rate_ratio_vs_others_per_occ_h": 0.4125,
+   "p_rate_ratio_occ_exact": 0.0,
+   "mttr_h": 4.0505,
+   "mttr_h_lo95": 3.6606,
+   "mttr_h_hi95": 4.4327,
+   "mean_wait_h": 1.0258,
+   "downtime_h_per_machine": 8.4018,
+   "availability": 0.998,
+   "lost_theo_hourly_usd": 19909.9316,
+   "repair_cost_usd": 40000.36
+  },
+  "Northwind": {
+   "faults_per_machine_30d": 0.5021,
+   "faults_per_machine_30d_lo95_boot": 0.4406,
+   "faults_per_machine_30d_hi95_boot": 0.5614,
+   "rate_ratio_vs_others": 0.684,
+   "p_rate_ratio_exact": 0.0,
+   "faults_per_1k_occupied_h": 1.871,
+   "rate_ratio_vs_others_per_occ_h": 0.657,
+   "p_rate_ratio_occ_exact": 0.0,
+   "mttr_h": 4.2227,
+   "mttr_h_lo95": 3.8968,
+   "mttr_h_hi95": 4.5754,
+   "mean_wait_h": 1.2252,
+   "downtime_h_per_machine": 12.8704,
+   "availability": 0.997,
+   "lost_theo_hourly_usd": 24753.412,
+   "repair_cost_usd": 54558.13
+  },
+  "Ridgeline": {
+   "faults_per_machine_30d": 1.2118,
+   "faults_per_machine_30d_lo95_boot": 1.0888,
+   "faults_per_machine_30d_hi95_boot": 1.3281,
+   "rate_ratio_vs_others": 2.9312,
+   "p_rate_ratio_exact": 0.0,
+   "faults_per_1k_occupied_h": 4.6185,
+   "rate_ratio_vs_others_per_occ_h": 2.914,
+   "p_rate_ratio_occ_exact": 0.0,
+   "mttr_h": 4.0397,
+   "mttr_h_lo95": 3.8206,
+   "mttr_h_hi95": 4.3,
+   "mean_wait_h": 1.1418,
+   "downtime_h_per_machine": 29.3082,
+   "availability": 0.9932,
+   "lost_theo_hourly_usd": 54222.2352,
+   "repair_cost_usd": 118386.72
+  }
+ },
+ "worst_manufacturer": "Ridgeline",
+ "change_points_fault_rate_per_occ_h": {
+  "Halcyon": {
+   "best_split_date": "2025-05-12",
+   "llr": 0.83,
+   "p_scan_permutation": 0.8407960199004975,
+   "rate_per_1k_occ_h_before": 1.2371756349723186,
+   "rate_per_1k_occ_h_after": 1.492094335039352,
+   "faults_per_machine_30d_before": 0.31526771483451366,
+   "faults_per_machine_30d_after": 0.3757175160897548
+  },
+  "Northwind": {
+   "best_split_date": "2025-01-22",
+   "llr": 1.65,
+   "p_scan_permutation": 0.47761194029850745,
+   "rate_per_1k_occ_h_before": 1.359470864890862,
+   "rate_per_1k_occ_h_after": 1.938974948769913,
+   "faults_per_machine_30d_before": 0.37142857142857144,
+   "faults_per_machine_30d_after": 0.5191730654419613
+  },
+  "Ridgeline": {
+   "best_split_date": "2025-03-27",
+   "llr": 7.04,
+   "p_scan_permutation": 0.014925373134328358,
+   "rate_per_1k_occ_h_before": 5.302214737116471,
+   "rate_per_1k_occ_h_after": 3.973292187000893,
+   "faults_per_machine_30d_before": 1.4290876525946992,
+   "faults_per_machine_30d_after": 1.0170064196418516
+  }
+ },
+ "worst_mfr_q2_vs_q1": {
+  "rate_ratio": 0.786661439202529,
+  "p_exact": 0.0021245386633083397,
+  "others_rate_ratio": 1.000184035125576,
+  "ratio_of_ratios": 0.7865166925042564,
+  "ci95": [
+   0.6257893345593316,
+   0.9885251688149124
+  ]
+ },
+ "banks": {
+  "n_banks": 51,
+  "n_significant_excess_bonferroni": 1,
+  "split_half_spearman_o_e": -0.06832579185520361,
+  "top3_by_p": [
+   {
+    "bank_id": "B-24",
+    "f": 48.0,
+    "exp": 27.2134,
+    "downtime_h": 183.9072,
+    "o_e_h1": 1.9909,
+    "o_e_h2": 1.4844,
+    "o_e": 1.7638,
+    "p_high": 0.0002
+   },
+   {
+    "bank_id": "B-38",
+    "f": 25.0,
+    "exp": 14.7982,
+    "downtime_h": 127.1292,
+    "o_e_h1": 1.6609,
+    "o_e_h2": 1.6898,
+    "o_e": 1.6894,
+    "p_high": 0.0096
+   },
+   {
+    "bank_id": "B-19",
+    "f": 36.0,
+    "exp": 24.9903,
+    "downtime_h": 152.4567,
+    "o_e_h1": 1.1934,
+    "o_e_h2": 1.7253,
+    "o_e": 1.4406,
+    "p_high": 0.0223
+   }
+  ]
+ },
+ "repeat_faults": {
+  "n_machines_excess_bonferroni": 0,
+  "pearson_dispersion_by_mfr_after_usage": {
+   "Halcyon": 0.8989386231460855,
+   "Northwind": 1.0740549104160921,
+   "Ridgeline": 1.1628406505790323
+  },
+  "note": "fault counts are ~Poisson given manufacturer x occupied hours: top repeat machines are high-use machines of the worst manufacturer, not lemons"
+ },
+ "fault_rate_scales_with_use": "theme Platinum Reels has ~0.11 faults/machine/30d but the same faults per occupied hour as others",
+ "staffing": {
+  "by_shift_short": [
+   {
+    "shift": "day",
+    "staffed_short": false,
+    "n_faults": 255,
+    "mean_wait_h": 0.583,
+    "wait_lo95": 0.44,
+    "wait_hi95": 0.74,
+    "median_wait_h": 0.0,
+    "mean_ttr_h": 3.545
+   },
+   {
+    "shift": "day",
+    "staffed_short": true,
+    "n_faults": 72,
+    "mean_wait_h": 2.001,
+    "wait_lo95": 1.444,
+    "wait_hi95": 2.606,
+    "median_wait_h": 1.196,
+    "mean_ttr_h": 5.072
+   },
+   {
+    "shift": "grave",
+    "staffed_short": false,
+    "n_faults": 303,
+    "mean_wait_h": 1.963,
+    "wait_lo95": 1.662,
+    "wait_hi95": 2.276,
+    "median_wait_h": 0.455,
+    "mean_ttr_h": 4.82
+   },
+   {
+    "shift": "swing",
+    "staffed_short": false,
+    "n_faults": 531,
+    "mean_wait_h": 0.696,
+    "wait_lo95": 0.55,
+    "wait_hi95": 0.844,
+    "median_wait_h": 0.0,
+    "mean_ttr_h": 3.681
+   },
+   {
+    "shift": "swing",
+    "staffed_short": true,
+    "n_faults": 46,
+    "mean_wait_h": 2.628,
+    "wait_lo95": 1.799,
+    "wait_hi95": 3.521,
+    "median_wait_h": 1.23,
+    "mean_ttr_h": 5.433
+   }
+  ],
+  "by_headcount": [
+   {
+    "shift": "day",
+    "planned": 1,
+    "actual": 0,
+    "n": 22,
+    "mean_wait_h": 4.892,
+    "mean_work_h": 2.753
+   },
+   {
+    "shift": "day",
+    "planned": 1,
+    "actual": 1,
+    "n": 88,
+    "mean_wait_h": 1.524,
+    "mean_work_h": 3.218
+   },
+   {
+    "shift": "day",
+    "planned": 2,
+    "actual": 1,
+    "n": 50,
+    "mean_wait_h": 0.729,
+    "mean_work_h": 3.21
+   },
+   {
+    "shift": "day",
+    "planned": 2,
+    "actual": 2,
+    "n": 167,
+    "mean_wait_h": 0.086,
+    "mean_work_h": 2.827
+   },
+   {
+    "shift": "grave",
+    "planned": 1,
+    "actual": 1,
+    "n": 303,
+    "mean_wait_h": 1.963,
+    "mean_work_h": 2.857
+   },
+   {
+    "shift": "swing",
+    "planned": 2,
+    "actual": 1,
+    "n": 46,
+    "mean_wait_h": 2.628,
+    "mean_work_h": 2.805
+   },
+   {
+    "shift": "swing",
+    "planned": 2,
+    "actual": 2,
+    "n": 531,
+    "mean_wait_h": 0.696,
+    "mean_work_h": 2.985
+   }
+  ],
+  "same_weeks_swing_short_minus_full_wait_h": 1.1552039258148712,
+  "ci95": [
+   0.06670104010494711,
+   2.216428318826697
+  ],
+  "mannwhitney_p": 0.000695309140355903,
+  "same_weeks_n_short_full": [
+   46,
+   87
+  ],
+  "day_shift_matched_on_planned": {
+   "planned_1": {
+    "n_short": 22,
+    "n_full": 88,
+    "wait_short": 4.8916919191919215,
+    "wait_full": 1.5243876262626264,
+    "diff_h": 3.367304292929295,
+    "ci95": [
+     2.3035477430555567,
+     4.5098294665404035
+    ]
+   },
+   "planned_2": {
+    "n_short": 50,
+    "n_full": 167,
+    "wait_short": 0.7292666666666667,
+    "wait_full": 0.08647039254823685,
+    "diff_h": 0.6427962741184299,
+    "ci95": [
+     0.3223018646041251,
+     1.0421044028609445
+    ]
+   }
+  },
+  "work_time_short_minus_full_h": 0.022852311853339913,
+  "work_time_p": 0.5535182433641928,
+  "queue_replay_fit": {
+   "corr": 0.9999962647614259,
+   "share_within_1min": 0.9991714995857498,
+   "replay_mean_wait_h": 1.141354137899291,
+   "observed_mean_wait_h": 1.1415272024302678
+  },
+  "downtime_h_caused_by_shortages": 368.20000000000005,
+  "theo_usd_lost_to_shortages": 7286.0797108584775,
+  "wait_by_local_hour_mean_h": [
+   2.9,
+   1.8,
+   2.1,
+   2.09,
+   1.16,
+   0.9,
+   2.43,
+   1.08,
+   1.03,
+   1.17,
+   1.03,
+   0.83,
+   0.65,
+   0.61,
+   0.91,
+   0.34,
+   0.75,
+   0.79,
+   0.68,
+   0.73,
+   1.3,
+   1.07,
+   1.49,
+   2.15
+  ]
+ },
+ "actions": {
+  "tech_best_shift": "swing",
+  "tech_by_shift_theo_central_23d": {
+   "day": 1193.0,
+   "swing": 1954.0,
+   "grave": 1714.0
+  },
+  "tech_by_shift_hours_central_23d": {
+   "day": 65.5,
+   "swing": 79.2,
+   "grave": 85.6
+  },
+  "preventive": {
+   "low (25% of excess over other manufacturers removed)": {
+    "hours": 63.4,
+    "theo": 1302.0,
+    "repair": 1820.0,
+    "net_before_cost": 2679.0,
+    "net_after_cost": -6321.0
+   },
+   "central (to fleet average incl. itself)": {
+    "hours": 171.0,
+    "theo": 3402.0,
+    "repair": 5329.0,
+    "net_before_cost": 8288.0,
+    "net_after_cost": -712.0
+   },
+   "high (to other manufacturers' average)": {
+    "hours": 232.0,
+    "theo": 4566.0,
+    "repair": 7659.0,
+    "net_before_cost": 11783.0,
+    "net_after_cost": 2783.0
+   }
+  }
+ },
+ "availability_explains_weak_machines": {
+  "manager_bottom10_availability": 0.9974269123410234,
+  "fleet_availability": 0.996201642709713,
+  "manager_bottom10_lost_theo_hourly_usd": 798.1336186349698,
+  "manager_bottom10_house_win_shortfall_usd": 63356.91499999999,
+  "spearman_availability_vs_theo_per_avail_h": -0.047354508301119196,
+  "spearman_availability_vs_theo_per_day": -0.03787728043011412,
+  "bottom_decile_theo_per_day_availability": 0.9960417615404953,
+  "bottom_decile_theo_per_day_share_explained_by_downtime": 0.004485883143079511
+ }
+}

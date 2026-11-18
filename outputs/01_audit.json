@@ -1,0 +1,84 @@
+{
+ "rows": {
+  "pdv": 56110,
+  "md": 56110,
+  "prop": 181,
+  "pp": 148893,
+  "ops": 1226,
+  "plc": 314,
+  "machines": 310,
+  "sessions": 776297,
+  "ledger": 782773,
+  "fnb": 227833,
+  "traffic": 30401
+ },
+ "off_floor_rows": 1018,
+ "off_floor_active_flag": [
+  {
+   "active": false,
+   "meter_status": "not_installed",
+   "n": 843
+  },
+  {
+   "active": false,
+   "meter_status": "retired",
+   "n": 175
+  }
+ ],
+ "off_floor_any_coin_in": 0.0,
+ "reconcile_md_vs_pdv": {
+  "md_coin": 248905219.25,
+  "pdv_coin": 248905219.25,
+  "md_hw": 23638155.1,
+  "pdv_hw": 23638155.1,
+  "md_theo": 23545364.478499997,
+  "pdv_theo": 23545364.4785,
+  "hw_identity_breaks": 0.0
+ },
+ "property_day_totals": {
+  "coin": 248905219.25,
+  "hw": 23638155.1,
+  "theo": 23545364.4785
+ },
+ "floor_hold_ratio_of_sums": 0.09496849913885444,
+ "floor_theo_hold": 0.09459570413769056,
+ "mean_of_daily_holds_WRONG": 0.09246312572338922,
+ "dst": [
+  {
+   "gaming_date": "2025-03-08 00:00:00",
+   "scheduled_seconds": 82800
+  }
+ ],
+ "active_machines_per_day": {
+  "mn": 300,
+  "mx": 308
+ },
+ "carded_coin_in_share": 0.6581013855136346,
+ "sessions_coin_in_usd": 163804869.65,
+ "md_carded_coin_in_usd": 163804869.65,
+ "pp_tracked_coin_in_usd": 163804869.65,
+ "comp_inside_cogs": {
+  "comp": 190669.3,
+  "cogs": 937936.2
+ },
+ "traffic_status": [
+  {
+   "counter_status": "partial",
+   "n": 98,
+   "non_null": 98
+  },
+  {
+   "counter_status": "offline",
+   "n": 153,
+   "non_null": 0
+  },
+  {
+   "counter_status": "ok",
+   "n": 30150,
+   "non_null": 30150
+  }
+ ],
+ "machines_with_multiple_placements": 4,
+ "config_changes": 0,
+ "location_changes": 4
+}

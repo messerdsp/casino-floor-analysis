@@ -1,0 +1,119 @@
+{
+ "horizon": "30 days, 7-day lead -> 23 effective days; benefits are theo (expected house win) $, gross of displacement",
+ "valuation": "saved wait hours x the faulted machine's own theo per available hour in the local hour the fault opened; removed faults valued at their actual hour-by-hour lost theo (method B)",
+ "displacement_check": "neighbour coin-in recovers 31% (95% CI 17%..44%) of a down machine's expected coin-in",
+ "A-TECH-SHIFT": {
+  "cost_usd": 11520.0,
+  "method": "queue replay of all 1,207 faults with +1 actual slot_tech on every shift of that type; low/high = 10th/90th percentile of 23-day moving windows over Jan-Jun",
+  "best_shift": "swing",
+  "by_shift": {
+   "day": {
+    "hours_low_p10": 5.17583333333334,
+    "hours_central_mean": 65.48971147943524,
+    "hours_high_p90": 173.0185555555556,
+    "theo_low_p10": 72.37804290261222,
+    "theo_central_mean": 1192.9280562964673,
+    "theo_high_p90": 3186.5585382483887,
+    "theo_low_net_of_displacement": 40.5027272967352,
+    "theo_central_net_of_displacement": 822.8341696392447,
+    "net_central_after_cost_usd": -10327.071943703533,
+    "saved_hours_whole_period": 515.3755555555556,
+    "faults_on_shift": 327,
+    "mean_wait_on_shift_now_h": 0.8950067957866124,
+    "mean_wait_on_shift_with_extra_tech_h": 0.16998810737342845,
+    "cost_usd": 11520.0,
+    "theo_central_per_dollar": 0.1035527826646239
+   },
+   "swing": {
+    "hours_low_p10": 26.526388888888892,
+    "hours_central_mean": 79.20485573971762,
+    "hours_high_p90": 171.70172222222226,
+    "theo_low_p10": 712.9138362821813,
+    "theo_central_mean": 1954.4387069525098,
+    "theo_high_p90": 4076.6392632071693,
+    "theo_low_net_of_displacement": 398.9463314980623,
+    "theo_central_net_of_displacement": 1348.0938285069572,
+    "net_central_after_cost_usd": -9565.56129304749,
+    "saved_hours_whole_period": 623.3077777777778,
+    "faults_on_shift": 577,
+    "mean_wait_on_shift_now_h": 0.8500134796841903,
+    "mean_wait_on_shift_with_extra_tech_h": 0.17606008087810515,
+    "cost_usd": 11520.0,
+    "theo_central_per_dollar": 0.16965613775629426
+   },
+   "grave": {
+    "hours_low_p10": 40.967555555555556,
+    "hours_central_mean": 85.61195825659914,
+    "hours_high_p90": 140.9675000000002,
+    "theo_low_p10": 930.3318607549519,
+    "theo_central_mean": 1713.7484812030636,
+    "theo_high_p90": 2942.971521946124,
+    "theo_low_net_of_displacement": 520.6133813582584,
+    "theo_central_net_of_displacement": 1182.0753154880892,
+    "net_central_after_cost_usd": -9806.251518796937,
+    "saved_hours_whole_period": 673.728888888889,
+    "faults_on_shift": 303,
+    "mean_wait_on_shift_now_h": 1.9627007700770078,
+    "mean_wait_on_shift_with_extra_tech_h": 0.3853722038870554,
+    "cost_usd": 11520.0,
+    "theo_central_per_dollar": 0.1487628889933215
+   }
+  }
+ },
+ "A-PREVENTIVE": {
+  "cost_usd": 9000.0,
+  "manufacturer": "Ridgeline",
+  "machines_active": 92,
+  "assumption": "No sweep in the data shows an effect; we assume the sweep moves Ridgeline's post-2025-03-27 fault rate (3.97/1k occupied h) to a target for the 23 days; 40 random thinning replays of its post-change faults through the queue model",
+  "scenarios": {
+   "low (25% of excess over other manufacturers removed)": {
+    "target_rate_per_1k_occ_h": 3.3757972435154135,
+    "fault_reduction_share": 0.1503778014212639,
+    "downtime_hours_saved": 63.4246595775463,
+    "downtime_hours_saved_sim_p05_p95": [
+     41.46788859953704,
+     86.42688570601851
+    ],
+    "theo_saved_usd": 1301.60365648681,
+    "repair_cost_saved_usd": 1820.0364192708334,
+    "sweep_downtime_h": 138.0,
+    "sweep_downtime_theo_usd": 443.0233170990748,
+    "net_theo_plus_repair_usd": 2678.616758658569,
+    "net_after_9000_cost_usd": -6321.383241341431,
+    "theo_saved_net_of_displacement_usd": 897.79426196894
+   },
+   "central (to fleet average incl. itself)": {
+    "target_rate_per_1k_occ_h": 2.2982891227313487,
+    "fault_reduction_share": 0.4215655394661182,
+    "downtime_hours_saved": 170.98960677083332,
+    "downtime_hours_saved_sim_p05_p95": [
+     145.7370609085648,
+     186.59045818865738
+    ],
+    "theo_saved_usd": 3401.895296131449,
+    "repair_cost_saved_usd": 5329.116471354166,
+    "sweep_downtime_h": 138.0,
+    "sweep_downtime_theo_usd": 443.0233170990748,
+    "net_theo_plus_repair_usd": 8287.988450386541,
+    "net_after_9000_cost_usd": -712.0115496134586,
+    "theo_saved_net_of_displacement_usd": 2346.491623210105
+   },
+   "high (to other manufacturers' average)": {
+    "target_rate_per_1k_occ_h": 1.5833124130589746,
+    "fault_reduction_share": 0.6015112056850556,
+    "downtime_hours_saved": 232.00935047743056,
+    "downtime_hours_saved_sim_p05_p95": [
+     207.8670853587963,
+     247.7051284722222
+    ],
+    "theo_saved_usd": 4566.367884497717,
+    "repair_cost_saved_usd": 7659.198794270834,
+    "sweep_downtime_h": 138.0,
+    "sweep_downtime_theo_usd": 443.0233170990748,
+    "net_theo_plus_repair_usd": 11782.543361669477,
+    "net_after_9000_cost_usd": 2782.5433616694772,
+    "theo_saved_net_of_displacement_usd": 3149.6983465817743
+   }
+  }
+ }
+}

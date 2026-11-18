@@ -1,0 +1,13 @@
+tier,period,players,comps_redeemed,comp_econ_cost,comp_face_value,points_earned,points_redeemed,carded_theo,carded_coin_in,visits,months,tier_basis,reinvestment,points_per_face_usd,points_earned_per_coin_in_usd,comps_per_visit,comp_econ_cost_per_month,median_pts_per_face_usd
+Base,pre,76928.0,30919.0,98708.6,354031.0,92018475.0,4784583.0,8723659.0385,92119672.55,196200.0,4.0,opening_tier (player_period),0.011315,13.514588,0.998901,0.157589,24677.15,
+Base,post,40633.0,16860.0,55198.2,197117.5,46256294.0,1177611.0,4370321.4875,46306925.65,97801.0,2.0,opening_tier (player_period),0.01263,5.974158,0.998907,0.172391,27599.1,
+Gold,pre,1882.0,7199.0,23019.3,82257.0,15776970.0,946483.0,1488750.984,15799222.35,35919.0,4.0,opening_tier (player_period),0.015462,11.506413,0.998592,0.200423,5754.825,
+Gold,post,1805.0,3648.0,11442.5,41083.0,7807476.0,203239.0,735305.134,7818714.15,17917.0,2.0,opening_tier (player_period),0.015562,4.947034,0.998563,0.203606,5721.25,
+Platinum,pre,152.0,477.0,1522.5,5446.5,1152006.0,49139.0,110268.9955,1153520.35,2534.0,4.0,opening_tier (player_period),0.013807,9.022124,0.998687,0.18824,380.625,
+Platinum,post,147.0,258.0,778.2,2814.5,605979.0,11924.0,56715.341,606814.6,1358.0,2.0,opening_tier (player_period),0.013721,4.236632,0.998623,0.189985,389.1,
+Base,pre,,16190.0,51796.9,186024.0,,2793949.0,,,,,tier_before at redemption (ledger),,15.019293,,,,15.0
+Base,post,,6295.0,21718.5,77024.0,,540427.0,,,,,tier_before at redemption (ledger),,7.016346,,,,7.0
+Gold,pre,,19987.0,63716.4,228092.0,,2737104.0,,,,,tier_before at redemption (ledger),,12.0,,,,12.0
+Gold,post,,9807.0,31140.2,111538.5,,630049.0,,,,,tier_before at redemption (ledger),,5.648713,,,,5.655172
+Platinum,pre,,2418.0,7737.1,27618.5,,249152.0,,,,,tier_before at redemption (ledger),,9.0212,,,,9.0
+Platinum,post,,4664.0,14560.2,52452.5,,222298.0,,,,,tier_before at redemption (ledger),,4.238082,,,,4.222222

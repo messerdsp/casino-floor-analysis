@@ -1,0 +1,1139 @@
+{
+ "closure": {
+  "walkway": "W-ENT-B40 (Main doors/Z-ENT <-> Back Forty/Z-B40)",
+  "closed_from_utc": "2025-03-03 14:00:00",
+  "closed_to_utc": "2025-04-07 13:00:00",
+  "gaming_dates": [
+   "2025-03-03",
+   "2025-04-06"
+  ],
+  "closed_gaming_days": 35,
+  "note": "Closure instants are exactly gaming-day boundaries (06:00 local), so closed days are whole gaming days."
+ },
+ "coin_in_per_avail_h": {
+  "all_ex_B40_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6503480701532536,
+    "closed": 0.45098109449871954,
+    "post": 0.6219077218147906
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.3496519298467464,
+    "structural_gap_pre_ci95": [
+     -0.3636521836660831,
+     -0.33693615170574975
+    ],
+    "structural_gap_post": -0.3780922781852094,
+    "structural_gap_post_ci95": [
+     -0.3836700493347043,
+     -0.3731338471497818
+    ],
+    "closure_effect": -0.30655426655998763,
+    "closure_effect_ci95": [
+     -0.3323929256519558,
+     -0.276912438427264
+    ],
+    "post_vs_pre": -0.04373096445379021,
+    "post_vs_pre_ci95": [
+     -0.0640978681311999,
+     -0.02107628693954692
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.31294388747245,
+    "closure_effect_ci95": [
+     -0.33041455442011314,
+     -0.29501737996610833
+    ],
+    "post_vs_pre": -0.04022682449940915,
+    "post_vs_pre_ci95": [
+     -0.05886847124866719,
+     -0.021215929687677635
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "GAR_HTL_no_spillover": {
+   "controls": [
+    "Z-GAR",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.7000356670156705,
+    "closed": 0.49256517218578993,
+    "post": 0.6904306262285411
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.29996433298432945,
+    "structural_gap_pre_ci95": [
+     -0.31411547472642065,
+     -0.2873078343393576
+    ],
+    "structural_gap_post": -0.3095693737714589,
+    "structural_gap_post_ci95": [
+     -0.31729319968535363,
+     -0.30289542609000475
+    ],
+    "closure_effect": -0.296371320213369,
+    "closure_effect_ci95": [
+     -0.31979144057043296,
+     -0.2695019310370658
+    ],
+    "post_vs_pre": -0.013720787725112316,
+    "post_vs_pre_ci95": [
+     -0.034500276775389825,
+     0.008573404782387503
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.3025245000569712,
+    "closure_effect_ci95": [
+     -0.32190903886513256,
+     -0.2825858167957172
+    ],
+    "post_vs_pre": -0.011198738301281758,
+    "post_vs_pre_ci95": [
+     -0.03164418926484603,
+     0.009678389180840455
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "all_ex_B40_incl_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT",
+    "Z-HL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6598371574923739,
+    "closed": 0.45679269269649886,
+    "post": 0.6346209622038
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.3401628425076261,
+    "structural_gap_pre_ci95": [
+     -0.3522507775125412,
+     -0.32983890884080724
+    ],
+    "structural_gap_post": -0.36537903779619996,
+    "structural_gap_post_ci95": [
+     -0.3702955010904654,
+     -0.36130151748833395
+    ],
+    "closure_effect": -0.3077190523303043,
+    "closure_effect_ci95": [
+     -0.3277623550448176,
+     -0.28656580456011294
+    ],
+    "post_vs_pre": -0.03821578551957394,
+    "post_vs_pre_ci95": [
+     -0.05466260976914826,
+     -0.018624028422798578
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.31447737331992137,
+    "closure_effect_ci95": [
+     -0.3290414777748983,
+     -0.29959713436251345
+    ],
+    "post_vs_pre": -0.036431682674243134,
+    "post_vs_pre_ci95": [
+     -0.0544885256881309,
+     -0.01803000029194317
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "PIT_HTL_not_adjacent": {
+   "controls": [
+    "Z-PIT",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6382563766403919,
+    "closed": 0.4374831784202914,
+    "post": 0.5970558354342042
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.3617436233596081,
+    "structural_gap_pre_ci95": [
+     -0.3746374192352607,
+     -0.34906336509642
+    ],
+    "structural_gap_post": -0.40294416456579585,
+    "structural_gap_post_ci95": [
+     -0.40944882319307485,
+     -0.39687816304967305
+    ],
+    "closure_effect": -0.31456512706839856,
+    "closure_effect_ci95": [
+     -0.3452378021141914,
+     -0.2841225080193352
+    ],
+    "post_vs_pre": -0.06455171105858148,
+    "post_vs_pre_ci95": [
+     -0.08469094011604215,
+     -0.04231512999246033
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.32108820204377886,
+    "closure_effect_ci95": [
+     -0.341430667530826,
+     -0.3001173806924521
+    ],
+    "post_vs_pre": -0.06187626022954965,
+    "post_vs_pre_ci95": [
+     -0.08209734747288684,
+     -0.0412097092236044
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  }
+ },
+ "theo_per_avail_h": {
+  "all_ex_B40_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6625845179986405,
+    "closed": 0.456739513844333,
+    "post": 0.6325462743223215
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.3374154820013595,
+    "structural_gap_pre_ci95": [
+     -0.3513673816496432,
+     -0.32405310780487306
+    ],
+    "structural_gap_post": -0.36745372567767853,
+    "structural_gap_post_ci95": [
+     -0.37356810587888256,
+     -0.36190038166312455
+    ],
+    "closure_effect": -0.31066980673811917,
+    "closure_effect_ci95": [
+     -0.3360718175718505,
+     -0.2848344534450728
+    ],
+    "post_vs_pre": -0.0453349615941081,
+    "post_vs_pre_ci95": [
+     -0.066822806809756,
+     -0.022642124496603057
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.3172484714170282,
+    "closure_effect_ci95": [
+     -0.33435850068382045,
+     -0.29969863618589754
+    ],
+    "post_vs_pre": -0.04181315640522612,
+    "post_vs_pre_ci95": [
+     -0.061758495994311706,
+     -0.021443814499438992
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "GAR_HTL_no_spillover": {
+   "controls": [
+    "Z-GAR",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.7162937968442327,
+    "closed": 0.5004626782523468,
+    "post": 0.7025636646090179
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.28370620315576733,
+    "structural_gap_pre_ci95": [
+     -0.29902608719095136,
+     -0.26928757131788406
+    ],
+    "structural_gap_post": -0.29743633539098213,
+    "structural_gap_post_ci95": [
+     -0.30601203091778995,
+     -0.2899260259511315
+    ],
+    "closure_effect": -0.30131647034048115,
+    "closure_effect_ci95": [
+     -0.3242320658714149,
+     -0.27599836675075384
+    ],
+    "post_vs_pre": -0.019168296997273293,
+    "post_vs_pre_ci95": [
+     -0.043179352789962024,
+     0.004982367319525882
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.3077103049577123,
+    "closure_effect_ci95": [
+     -0.32665546399531953,
+     -0.2882321066931294
+    ],
+    "post_vs_pre": -0.016591486567242242,
+    "post_vs_pre_ci95": [
+     -0.038600025498080955,
+     0.005920875744828818
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "all_ex_B40_incl_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT",
+    "Z-HL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6689320769461816,
+    "closed": 0.46095302690063583,
+    "post": 0.6433041135204521
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.3310679230538184,
+    "structural_gap_pre_ci95": [
+     -0.3439456622907302,
+     -0.3192973532530998
+    ],
+    "structural_gap_post": -0.35669588647954786,
+    "structural_gap_post_ci95": [
+     -0.3623334839129473,
+     -0.3519719288484443
+    ],
+    "closure_effect": -0.31091206000318405,
+    "closure_effect_ci95": [
+     -0.328980970177215,
+     -0.2901997786722757
+    ],
+    "post_vs_pre": -0.038311757365152244,
+    "post_vs_pre_ci95": [
+     -0.05634186917968588,
+     -0.01748544236067198
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.317897498717552,
+    "closure_effect_ci95": [
+     -0.33252051925270126,
+     -0.3029541196759031
+    ],
+    "post_vs_pre": -0.036592658664525095,
+    "post_vs_pre_ci95": [
+     -0.056163147653009206,
+     -0.01661637492634883
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "PIT_HTL_not_adjacent": {
+   "controls": [
+    "Z-PIT",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6455712530042884,
+    "closed": 0.4410883421084191,
+    "post": 0.6049248086305854
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.3544287469957116,
+    "structural_gap_pre_ci95": [
+     -0.3683105090226536,
+     -0.34100744413306894
+    ],
+    "structural_gap_post": -0.3950751913694146,
+    "structural_gap_post_ci95": [
+     -0.4017688458752887,
+     -0.3885318090639144
+    ],
+    "closure_effect": -0.31674723734098953,
+    "closure_effect_ci95": [
+     -0.34485854419435996,
+     -0.2868698925280657
+    ],
+    "post_vs_pre": -0.06296198008282905,
+    "post_vs_pre_ci95": [
+     -0.08504731247078634,
+     -0.039208240580706336
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.3235772433340835,
+    "closure_effect_ci95": [
+     -0.34337720133066213,
+     -0.30318023275653944
+    ],
+    "post_vs_pre": -0.060263761954308305,
+    "post_vs_pre_ci95": [
+     -0.08187743324443202,
+     -0.038141279745520076
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  }
+ },
+ "traffic_entries_adj": {
+  "all_ex_B40_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.04250910127706749,
+    "closed": 0.02914247773983785,
+    "post": 0.03978836580676515
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.9574908987229325,
+    "structural_gap_pre_ci95": [
+     -0.9579356100639925,
+     -0.9570361890123765
+    ],
+    "structural_gap_post": -0.9602116341932349,
+    "structural_gap_post_ci95": [
+     -0.960523659440394,
+     -0.9599164011403638
+    ],
+    "closure_effect": -0.3144414521988629,
+    "closure_effect_ci95": [
+     -0.3402264434382415,
+     -0.29013260897160054
+    ],
+    "post_vs_pre": -0.06400359896035024,
+    "post_vs_pre_ci95": [
+     -0.07626393999386219,
+     -0.051281616812440076
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.3209334802480217,
+    "closure_effect_ci95": [
+     -0.34145846075467234,
+     -0.29976879093077546
+    ],
+    "post_vs_pre": -0.06028909634497306,
+    "post_vs_pre_ci95": [
+     -0.07331863390364184,
+     -0.04707635789848681
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "GAR_HTL_no_spillover": {
+   "controls": [
+    "Z-GAR",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.13739644939556928,
+    "closed": 0.09590096195712138,
+    "post": 0.12980354794639226
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.8626035506044307,
+    "structural_gap_pre_ci95": [
+     -0.8641594171107116,
+     -0.8612855956753694
+    ],
+    "structural_gap_post": -0.8701964520536077,
+    "structural_gap_post_ci95": [
+     -0.8713581914553101,
+     -0.8691074098383128
+    ],
+    "closure_effect": -0.30201280761616267,
+    "closure_effect_ci95": [
+     -0.32981359757128703,
+     -0.2742025614269646
+    ],
+    "post_vs_pre": -0.055262719543186845,
+    "post_vs_pre_ci95": [
+     -0.06854821908890919,
+     -0.04181418640286
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.30826294570485796,
+    "closure_effect_ci95": [
+     -0.33047493991782545,
+     -0.28531405198456455
+    ],
+    "post_vs_pre": -0.05193698705780287,
+    "post_vs_pre_ci95": [
+     -0.06640681242439772,
+     -0.03724289286734967
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "all_ex_B40_incl_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT",
+    "Z-HL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.04201673411559457,
+    "closed": 0.028781085300973196,
+    "post": 0.039357968563391674
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.9579832658844054,
+    "structural_gap_pre_ci95": [
+     -0.9584666240556687,
+     -0.9575314011301834
+    ],
+    "structural_gap_post": -0.9606420314366083,
+    "structural_gap_post_ci95": [
+     -0.96094333031508,
+     -0.9603585985636461
+    ],
+    "closure_effect": -0.3150089861389047,
+    "closure_effect_ci95": [
+     -0.33908742906356365,
+     -0.29118022911034114
+    ],
+    "post_vs_pre": -0.06327872949116453,
+    "post_vs_pre_ci95": [
+     -0.0757848456643003,
+     -0.05020056379892199
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.3215253012190273,
+    "closure_effect_ci95": [
+     -0.3416210218295549,
+     -0.3008161983465408
+    ],
+    "post_vs_pre": -0.059793549223329356,
+    "post_vs_pre_ci95": [
+     -0.07280202559917472,
+     -0.04660256548412367
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "PIT_HTL_not_adjacent": {
+   "controls": [
+    "Z-PIT",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.09696622847782518,
+    "closed": 0.06524238725924413,
+    "post": 0.09074889335762214
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.9030337715221748,
+    "structural_gap_pre_ci95": [
+     -0.9045099339597854,
+     -0.901617587294213
+    ],
+    "structural_gap_post": -0.9092511066423778,
+    "structural_gap_post_ci95": [
+     -0.9100500436541243,
+     -0.9084691594625774
+    ],
+    "closure_effect": -0.32716381483101464,
+    "closure_effect_ci95": [
+     -0.35516612786849017,
+     -0.30068524554950343
+    ],
+    "post_vs_pre": -0.06411856187254783,
+    "post_vs_pre_ci95": [
+     -0.0804208868080973,
+     -0.04661897084300286
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.33274947238840075,
+    "closure_effect_ci95": [
+     -0.35505660631454744,
+     -0.30967078513079727
+    ],
+    "post_vs_pre": -0.06057022674992497,
+    "post_vs_pre_ci95": [
+     -0.07696494497082583,
+     -0.04388430963676291
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  }
+ },
+ "occupancy": {
+  "all_ex_B40_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6564914984898425,
+    "closed": 0.47700277931546564,
+    "post": 0.6276698423988344
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.34350850151015755,
+    "structural_gap_pre_ci95": [
+     -0.35490175713678684,
+     -0.33157398647598
+    ],
+    "structural_gap_post": -0.3723301576011656,
+    "structural_gap_post_ci95": [
+     -0.3791199202461032,
+     -0.36540745043826095
+    ],
+    "closure_effect": -0.2734060069129044,
+    "closure_effect_ci95": [
+     -0.3033861934854557,
+     -0.24018569035390278
+    ],
+    "post_vs_pre": -0.043902558003123926,
+    "post_vs_pre_ci95": [
+     -0.06374321583670199,
+     -0.024394450853192366
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.28160268261288146,
+    "closure_effect_ci95": [
+     -0.30244880559595644,
+     -0.2601335790558907
+    ],
+    "post_vs_pre": -0.03982531883448295,
+    "post_vs_pre_ci95": [
+     -0.05546204838708313,
+     -0.023929724817322483
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "GAR_HTL_no_spillover": {
+   "controls": [
+    "Z-GAR",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.7087164294413475,
+    "closed": 0.518300522020174,
+    "post": 0.6950491701063256
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.2912835705586525,
+    "structural_gap_pre_ci95": [
+     -0.30197375010575134,
+     -0.2794434638584091
+    ],
+    "structural_gap_post": -0.3049508298936744,
+    "structural_gap_post_ci95": [
+     -0.3138105476380282,
+     -0.29611656103669703
+    ],
+    "closure_effect": -0.26867714576797763,
+    "closure_effect_ci95": [
+     -0.29496002441354163,
+     -0.23545113692148564
+    ],
+    "post_vs_pre": -0.019284524482937715,
+    "post_vs_pre_ci95": [
+     -0.04041516509262705,
+     0.00045207022421476774
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.2769823504474822,
+    "closure_effect_ci95": [
+     -0.2977693118601693,
+     -0.2555800673576448
+    ],
+    "post_vs_pre": -0.015559010730013203,
+    "post_vs_pre_ci95": [
+     -0.03299367297733671,
+     0.0021899901510751387
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "all_ex_B40_incl_HL": {
+   "controls": [
+    "Z-BAR",
+    "Z-ENT",
+    "Z-GAR",
+    "Z-HTL",
+    "Z-PIT",
+    "Z-HL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.7153542081526009,
+    "closed": 0.5178727760201977,
+    "post": 0.6811738643087929
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.28464579184739913,
+    "structural_gap_pre_ci95": [
+     -0.29664033217504815,
+     -0.27185623059014663
+    ],
+    "structural_gap_post": -0.3188261356912071,
+    "structural_gap_post_ci95": [
+     -0.32597777837125763,
+     -0.31165556727434296
+    ],
+    "closure_effect": -0.2760610476345672,
+    "closure_effect_ci95": [
+     -0.3040982466821551,
+     -0.24515141225598014
+    ],
+    "post_vs_pre": -0.047781006184444696,
+    "post_vs_pre_ci95": [
+     -0.06675174686085646,
+     -0.028505751018310415
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.2842656033074576,
+    "closure_effect_ci95": [
+     -0.3047457567340575,
+     -0.26318216455259164
+    ],
+    "post_vs_pre": -0.04399545154630419,
+    "post_vs_pre_ci95": [
+     -0.0591432232756742,
+     -0.02860380105234264
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  },
+  "PIT_HTL_not_adjacent": {
+   "controls": [
+    "Z-PIT",
+    "Z-HTL"
+   ],
+   "n_days": 181,
+   "ratio_B40_vs_control": {
+    "pre": 0.6521346390648682,
+    "closed": 0.46900685301575584,
+    "post": 0.6105912140728084
+   },
+   "ratio_of_sums": {
+    "structural_gap_pre": -0.34786536093513176,
+    "structural_gap_pre_ci95": [
+     -0.3591268491019487,
+     -0.33567435267781176
+    ],
+    "structural_gap_post": -0.38940878592719164,
+    "structural_gap_post_ci95": [
+     -0.3969934369451853,
+     -0.3827198493339261
+    ],
+    "closure_effect": -0.2808128491866486,
+    "closure_effect_ci95": [
+     -0.31181402845633394,
+     -0.24636903589816067
+    ],
+    "post_vs_pre": -0.06370375456766297,
+    "post_vs_pre_ci95": [
+     -0.08487495129107218,
+     -0.04448111182357502
+    ],
+    "method": "B40/control ratio of sums by period; CI = week-block bootstrap within period (2000 reps)"
+   },
+   "regression": {
+    "closure_effect": -0.28885202092485535,
+    "closure_effect_ci95": [
+     -0.31232520754203913,
+     -0.2645775973043553
+    ],
+    "post_vs_pre": -0.05992770602161179,
+    "post_vs_pre_ci95": [
+     -0.07584690328882679,
+     -0.04373428920945952
+    ],
+    "method": "daily log(B40 metric / control metric) ~ closed + post + weekday FE; Newey-West SE (7 lags)"
+   }
+  }
+ },
+ "primary_control": "all_ex_B40_HL (BAR, ENT, GAR, HTL, PIT; HL excluded: separate high-limit room, ~6% occupancy, very different product)",
+ "interpretation_notes": [
+  "traffic structural_gap_* compares counts from different sensors (crossings, sensor placement differs) - NOT interpretable as a level gap; only the within-zone changes (closure_effect, post_vs_pre) are meaningful.",
+  "post_vs_pre for cpah depends on control: PIT added 8 high-earning machines on 2025-03-24, inflating controls that include PIT; GAR_HTL control gives the cleanest post comparison.",
+  "Spillover: during closure BAR traffic +14% and ENT traffic -13% vs GAR/HTL (rerouting past counters); PIT/HL cpah +3% - so controls incl. those zones slightly overstate the B40 effect (GAR_HTL control is the conservative estimate)."
+ ],
+ "closure_cost_B40": {
+  "coin_in": {
+   "actual": 3785866.95,
+   "counterfactual": 5461911.815481333,
+   "lost": 1676044.8654813329,
+   "lost_per_day": 47886.99615660951
+  },
+  "theo": {
+   "actual": 361463.611,
+   "counterfactual": 524606.3702061585,
+   "lost": 163142.75920615852,
+   "lost_per_day": 4661.221691604529
+  },
+  "note": "Gross loss in Z-B40 only. Some play appears to have shifted to other zones (see spillover), so the net floor loss is smaller; floor-level net effect is not identifiable without a control property."
+ },
+ "spillover_other_zones": {
+  "Z-BAR": {
+   "cpah_closed_vs_pre": 0.015587721258023324,
+   "cpah_closed_vs_pre_rel_GAR_HTL": -0.0010612278820929522,
+   "traffic_closed_vs_pre": 0.1381424544047707,
+   "traffic_closed_vs_pre_rel_GAR_HTL": 0.13810114742734236
+  },
+  "Z-ENT": {
+   "cpah_closed_vs_pre": 0.029207598261413725,
+   "cpah_closed_vs_pre_rel_GAR_HTL": 0.012335372850053039,
+   "traffic_closed_vs_pre": -0.12552197905973683,
+   "traffic_closed_vs_pre_rel_GAR_HTL": -0.1255537167773949
+  },
+  "Z-PIT": {
+   "cpah_closed_vs_pre": 0.05201600685457386,
+   "cpah_closed_vs_pre_rel_GAR_HTL": 0.03476987377705498,
+   "traffic_closed_vs_pre": 0.05602035350284296,
+   "traffic_closed_vs_pre_rel_GAR_HTL": 0.05598202700976018
+  },
+  "Z-HL": {
+   "cpah_closed_vs_pre": 0.050267845677614,
+   "cpah_closed_vs_pre_rel_GAR_HTL": 0.03305037092858276,
+   "traffic_closed_vs_pre": 0.09099754582676534,
+   "traffic_closed_vs_pre_rel_GAR_HTL": 0.09095794989496842
+  },
+  "Z-GAR": {
+   "cpah_closed_vs_pre": 0.010623010547234912,
+   "cpah_closed_vs_pre_rel_GAR_HTL": -0.011354168306655477,
+   "traffic_closed_vs_pre": 3.7471109962439186e-05,
+   "traffic_closed_vs_pre_rel_GAR_HTL": 2.4987388229646967e-06
+  },
+  "Z-HTL": {
+   "cpah_closed_vs_pre": 0.022229577214974983,
+   "cpah_closed_vs_pre_rel_GAR_HTL": 0.011484566001970675,
+   "traffic_closed_vs_pre": 3.497228375293204e-05,
+   "traffic_closed_vs_pre_rel_GAR_HTL": -2.4987325791814285e-06
+  }
+ },
+ "recovery": {
+  "weekly_cpah_index_vs_pre (1.0 = pre-closure B40/control ratio)": [
+   {
+    "week_start": "2025-01-01",
+    "period": "pre",
+    "days": 5,
+    "cpah_index": 1.023,
+    "traffic_index": 1.02
+   },
+   {
+    "week_start": "2025-01-06",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 0.996,
+    "traffic_index": 0.979
+   },
+   {
+    "week_start": "2025-01-13",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 1.021,
+    "traffic_index": 1.021
+   },
+   {
+    "week_start": "2025-01-20",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 0.973,
+    "traffic_index": 1.002
+   },
+   {
+    "week_start": "2025-01-27",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 1.001,
+    "traffic_index": 1.009
+   },
+   {
+    "week_start": "2025-02-03",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 1.052,
+    "traffic_index": 1.0
+   },
+   {
+    "week_start": "2025-02-10",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 0.978,
+    "traffic_index": 0.986
+   },
+   {
+    "week_start": "2025-02-17",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 1.015,
+    "traffic_index": 1.016
+   },
+   {
+    "week_start": "2025-02-24",
+    "period": "pre",
+    "days": 7,
+    "cpah_index": 0.942,
+    "traffic_index": 0.972
+   },
+   {
+    "week_start": "2025-03-03",
+    "period": "closed",
+    "days": 7,
+    "cpah_index": 0.696,
+    "traffic_index": 0.695
+   },
+   {
+    "week_start": "2025-03-10",
+    "period": "closed",
+    "days": 7,
+    "cpah_index": 0.691,
+    "traffic_index": 0.7
+   },
+   {
+    "week_start": "2025-03-17",
+    "period": "closed",
+    "days": 7,
+    "cpah_index": 0.739,
+    "traffic_index": 0.721
+   },
+   {
+    "week_start": "2025-03-24",
+    "period": "closed",
+    "days": 7,
+    "cpah_index": 0.663,
+    "traffic_index": 0.667
+   },
+   {
+    "week_start": "2025-03-31",
+    "period": "closed",
+    "days": 7,
+    "cpah_index": 0.672,
+    "traffic_index": 0.642
+   },
+   {
+    "week_start": "2025-04-07",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.961,
+    "traffic_index": 0.939
+   },
+   {
+    "week_start": "2025-04-14",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.973,
+    "traffic_index": 0.96
+   },
+   {
+    "week_start": "2025-04-21",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.972,
+    "traffic_index": 0.939
+   },
+   {
+    "week_start": "2025-04-28",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.963,
+    "traffic_index": 0.948
+   },
+   {
+    "week_start": "2025-05-05",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.942,
+    "traffic_index": 0.921
+   },
+   {
+    "week_start": "2025-05-12",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.978,
+    "traffic_index": 0.949
+   },
+   {
+    "week_start": "2025-05-19",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.965,
+    "traffic_index": 0.932
+   },
+   {
+    "week_start": "2025-05-26",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.937,
+    "traffic_index": 0.917
+   },
+   {
+    "week_start": "2025-06-02",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.941,
+    "traffic_index": 0.946
+   },
+   {
+    "week_start": "2025-06-09",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.963,
+    "traffic_index": 0.94
+   },
+   {
+    "week_start": "2025-06-16",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.944,
+    "traffic_index": 0.924
+   },
+   {
+    "week_start": "2025-06-23",
+    "period": "post",
+    "days": 7,
+    "cpah_index": 0.947,
+    "traffic_index": 0.924
+   },
+   {
+    "week_start": "2025-06-30",
+    "period": "post",
+    "days": 1,
+    "cpah_index": 0.855,
+    "traffic_index": 0.849
+   }
+  ],
+  "first_full_post_week_cpah_index": 0.9606501624793249,
+  "post_full_weeks_mean_cpah_index": 0.9569423043805269,
+  "share_of_closure_gap_recovered_cpah": 0.8573467433857007
+ },
+ "structural_same_config": {
+  "pre": {
+   "within_config_B40_vs_rest_cpah_ratio_weighted": 0.6573300053389975,
+   "per_config": {
+    "G-CLS93": 0.631,
+    "G-HIGH92": 0.632,
+    "G-JKP88": 0.566,
+    "G-LOW92": 0.699,
+    "G-NEO88": 0.645,
+    "G-PEN89": 0.677,
+    "G-STD90": 0.666,
+    "G-VID95": 0.692
+   },
+   "theo_hold_B40": 0.09594179742803119,
+   "theo_hold_rest": 0.09416996792020199
+  },
+  "closed": {
+   "within_config_B40_vs_rest_cpah_ratio_weighted": 0.45975739228831697,
+   "per_config": {
+    "G-CLS93": 0.428,
+    "G-HIGH92": 0.458,
+    "G-JKP88": 0.366,
+    "G-LOW92": 0.522,
+    "G-NEO88": 0.453,
+    "G-PEN89": 0.482,
+    "G-STD90": 0.44,
+    "G-VID95": 0.503
+   },
+   "theo_hold_B40": 0.09547710359974484,
+   "theo_hold_rest": 0.09436368047237631
+  },
+  "post": {
+   "within_config_B40_vs_rest_cpah_ratio_weighted": 0.6412931477176375,
+   "per_config": {
+    "G-CLS93": 0.617,
+    "G-HIGH92": 0.628,
+    "G-JKP88": 0.547,
+    "G-LOW92": 0.674,
+    "G-NEO88": 0.655,
+    "G-PEN89": 0.651,
+    "G-STD90": 0.639,
+    "G-VID95": 0.68
+   },
+   "theo_hold_B40": 0.09558110537530012,
+   "theo_hold_rest": 0.09419590662500607
+  }
+ },
+ "decomposition_occupancy_vs_spend": {
+  "pre": {
+   "occupancy_B40": 0.27872896641042266,
+   "occupancy_ctrl": 0.4245736114657932,
+   "coin_per_occupied_h_B40": 482.7297243665178,
+   "coin_per_occupied_h_ctrl": 487.28976783199346
+  },
+  "closed": {
+   "occupancy_B40": 0.2072906927295603,
+   "occupancy_ctrl": 0.4345691507857414,
+   "coin_per_occupied_h_B40": 464.3318214036706,
+   "coin_per_occupied_h_ctrl": 491.1238454027747
+  },
+  "post": {
+   "occupancy_B40": 0.25524598719097824,
+   "occupancy_ctrl": 0.4066564457127282,
+   "coin_per_occupied_h_B40": 486.3479459229654,
+   "coin_per_occupied_h_ctrl": 490.85407345910926
+  }
+ }
+}

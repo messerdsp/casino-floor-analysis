@@ -1,0 +1,179 @@
+{
+ "scope": "TRACKED (loyalty-card) play only, gaming dates 2025-01-01..2025-06-30. Player view: net = payout - coin-in.",
+ "totals_usd": {
+  "tracked_coin_in": 163804869.65,
+  "tracked_payout": 148219409.05,
+  "tracked_net_player_view": -15585460.6,
+  "theo": 15485020.9805,
+  "luck_residual_player_view": -100439.6195,
+  "tracked_hold": 0.09514650347881155,
+  "theo_hold": 0.09453333721754834,
+  "linked_pos_cash": 1335083.0,
+  "linked_pos_cogs_incl_comps": 591346.7,
+  "comp_economic_cost": 190669.3,
+  "comp_face_value_not_revenue": 682749.5,
+  "tracked_contribution": 16329196.9
+ },
+ "reconciliation_vs_machine_day_carded": {
+  "md_carded_coin_in": 163804869.65,
+  "md_carded_payout": 148219409.05,
+  "md_carded_theo": 15485020.9805,
+  "diff_coin_in": 0.0,
+  "diff_payout": 0.0,
+  "diff_theo": 0.0,
+  "carded_share_of_all_coin_in": 0.6581013855136346,
+  "carded_share_of_all_theo": 0.657667499462149,
+  "uncarded_house_win": 8052694.500000007
+ },
+ "distribution": {
+  "players_with_carded_gaming": 96559,
+  "players_total_incl_fnb_only": 113890,
+  "share_ended_ahead": 0.16056504313424952,
+  "share_exactly_even": 0.0006524508331693576,
+  "net_percentiles_usd": {
+   "p1": -2640.823,
+   "p5": -747.7649999999999,
+   "p10": -410.0,
+   "p25": -204.0,
+   "p50": -96.0,
+   "p75": -32.0,
+   "p90": 81.05999999999985,
+   "p95": 279.55499999999955,
+   "p99": 1120.3569999999984
+  },
+  "mean_net_usd": -161.4086786317174,
+  "gross_wins_of_winners_usd": 5353963.95,
+  "gross_losses_of_losers_usd": 20939424.549999997,
+  "corr_loss_vs_theo": 0.7106314474397882,
+  "r2_loss_vs_theo": 0.5049970540903685,
+  "share_ahead_by_coin_in_quintile": {
+   "Q1": {
+    "players": 19312,
+    "coin_in_range_usd": [
+     0.25,
+     235.0
+    ],
+    "share_ahead": 0.2604080364540182,
+    "hold": -0.26982549783919496
+   },
+   "Q2": {
+    "players": 19312,
+    "coin_in_range_usd": [
+     235.0,
+     456.0
+    ],
+    "share_ahead": 0.1582953603976802,
+    "hold": 0.08714217515093432
+   },
+   "Q3": {
+    "players": 19311,
+    "coin_in_range_usd": [
+     456.0,
+     774.5
+    ],
+    "share_ahead": 0.14473616073740356,
+    "hold": 0.10999140441123705
+   },
+   "Q4": {
+    "players": 19312,
+    "coin_in_range_usd": [
+     774.5,
+     1432.25
+    ],
+    "share_ahead": 0.12795153272576637,
+    "hold": 0.11967535379431343
+   },
+   "Q5": {
+    "players": 19312,
+    "coin_in_range_usd": [
+     1432.4,
+     83707.85
+    ],
+    "share_ahead": 0.11143330571665286,
+    "hold": 0.09765903338478252
+   }
+  },
+  "luck_check": {
+   "players_with_sd": 96559,
+   "share_abs_z_gt_1.96": 0.05510620449673257,
+   "mean_z": 0.11551250744211014,
+   "sd_z": 1.9102183910582105,
+   "share_abs_z_gt_1.96_coin_in_ge_10k": 0.05192675594424706,
+   "note": "Per-player luck z = (net + theo)/SD; SD from sum_bet_squared x game payout variance. Near 5% / SD~1 means winners and losers beyond theo are consistent with chance."
+  }
+ },
+ "concentration": {
+  "coin_in": {
+   "population": "all gaming players",
+   "n": 96559,
+   "top_1pct_share": 0.20413586465071248,
+   "top_5pct_share": 0.5206002869890871,
+   "top_10pct_share": 0.6397222165855189,
+   "top_20pct_share": 0.7501315947599485,
+   "gini": 0.7093493970871797
+  },
+  "theo": {
+   "population": "all gaming players",
+   "n": 96559,
+   "top_1pct_share": 0.20286105607837343,
+   "top_5pct_share": 0.5189895545908717,
+   "top_10pct_share": 0.6382578839541792,
+   "top_20pct_share": 0.7486304835555788,
+   "gini": 0.7074676202861728
+  },
+  "net_loss_among_losers": {
+   "population": "players who ended behind",
+   "n": 80992,
+   "top_1pct_share": 0.15734583785398243,
+   "top_5pct_share": 0.40734925545028877,
+   "top_10pct_share": 0.5283805089094483,
+   "top_20pct_share": 0.6651772720277548,
+   "gini": 0.6237344798232489
+  },
+  "top_1pct_of_all_players_by_loss": {
+   "players": 966,
+   "their_net_usd": -3720913.5,
+   "share_of_gross_losses": 0.1776989377676093,
+   "share_of_total_tracked_net_loss": 0.2387426073246754,
+   "their_theo_usd": 2803583.421,
+   "their_luck_usd": -917330.0789999999,
+   "their_share_of_coin_in": 0.18140653671342183,
+   "overlap_with_top_1pct_by_theo": 0.6666666666666666,
+   "note": "Exposure, not just luck: the biggest losers are mostly the biggest expected-loss (theo) players."
+  }
+ },
+ "tier_summary": {
+  "Base": {
+   "players": 111837,
+   "gaming_players": 94509,
+   "share_of_tracked_coin_in": 0.8450701038117763,
+   "share_of_tracked_theo": 0.8455901055923016,
+   "net_per_gaming_player": -139.62524627284174,
+   "share_ahead": 0.16145552275444666,
+   "comp_cost_per_theo": 0.011754011676922513
+  },
+  "Gold": {
+   "players": 1900,
+   "gaming_players": 1897,
+   "share_of_tracked_coin_in": 0.14418336005800178,
+   "share_of_tracked_theo": 0.14362629025822518,
+   "net_per_gaming_player": -1172.6811544544016,
+   "share_ahead": 0.11966262519768055,
+   "comp_cost_per_theo": 0.015495022684495053
+  },
+  "Platinum": {
+   "players": 153,
+   "gaming_players": 153,
+   "share_of_tracked_coin_in": 0.010746536130221815,
+   "share_of_tracked_theo": 0.010783604149473242,
+   "net_per_gaming_player": -1078.7062091503267,
+   "share_ahead": 0.11764705882352941,
+   "comp_cost_per_theo": 0.013777938986510868
+  }
+ },
+ "limitations": [
+  "Uncarded play (~34% of coin-in) is invisible per person; a carded guest may also play uncarded.",
+  "Six-month window: 'ahead' is over this window only; short-tenure players have few spins so their results are mostly luck.",
+  "Opening tier is fixed at 2025-01-01; tier changes within the window are not reflected in groups."
+ ]
+}

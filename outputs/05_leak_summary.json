@@ -1,0 +1,275 @@
+{
+ "hourly_vs_daily_meter_mismatches": 0,
+ "meter_oddity_totals": {
+  "payout_not_multiple": 0,
+  "carded_gt_total": 0,
+  "pos_gt_spins": 0,
+  "below_min_bet": 0,
+  "above_max_bet": 0,
+  "occ_gt_avail": 0,
+  "spins_without_occupancy": 0
+ },
+ "machines_hit_z_abs_gt_4": [
+  "M-1158"
+ ],
+ "hit_z_sd": 7.117683608273301,
+ "month_outliers": [
+  {
+   "machine_id": "M-1210",
+   "month": "2025-03",
+   "hold": -0.006,
+   "theo_hold": 0.05,
+   "luck_z": -4.159,
+   "hit_z": 0.632
+  },
+  {
+   "machine_id": "M-1192",
+   "month": "2025-06",
+   "hold": 0.002,
+   "theo_hold": 0.05,
+   "luck_z": -3.706,
+   "hit_z": 0.319
+  },
+  {
+   "machine_id": "M-1161",
+   "month": "2025-05",
+   "hold": 0.057,
+   "theo_hold": 0.11,
+   "luck_z": -3.355,
+   "hit_z": 0.395
+  },
+  {
+   "machine_id": "M-1210",
+   "month": "2025-05",
+   "hold": 0.006,
+   "theo_hold": 0.05,
+   "luck_z": -3.258,
+   "hit_z": 0.427
+  },
+  {
+   "machine_id": "M-5076",
+   "month": "2025-05",
+   "hold": -0.024,
+   "theo_hold": 0.05,
+   "luck_z": -3.218,
+   "hit_z": -1.264
+  },
+  {
+   "machine_id": "M-1041",
+   "month": "2025-02",
+   "hold": 0.007,
+   "theo_hold": 0.05,
+   "luck_z": -3.12,
+   "hit_z": -0.848
+  },
+  {
+   "machine_id": "M-1288",
+   "month": "2025-05",
+   "hold": -0.102,
+   "theo_hold": 0.12,
+   "luck_z": -3.12,
+   "hit_z": 1.441
+  },
+  {
+   "machine_id": "M-1025",
+   "month": "2025-05",
+   "hold": 0.053,
+   "theo_hold": 0.07,
+   "luck_z": -3.045,
+   "hit_z": 1.547
+  },
+  {
+   "machine_id": "M-1037",
+   "month": "2025-03",
+   "hold": 0.013,
+   "theo_hold": 0.1,
+   "luck_z": -3.028,
+   "hit_z": 0.393
+  },
+  {
+   "machine_id": "M-1158",
+   "month": "2025-05",
+   "hold": -0.001,
+   "theo_hold": 0.1,
+   "luck_z": -2.789,
+   "hit_z": 54.433
+  },
+  {
+   "machine_id": "M-1158",
+   "month": "2025-03",
+   "hold": 0.01,
+   "theo_hold": 0.1,
+   "luck_z": -2.355,
+   "hit_z": 47.497
+  },
+  {
+   "machine_id": "M-1158",
+   "month": "2025-04",
+   "hold": 0.012,
+   "theo_hold": 0.1,
+   "luck_z": -2.314,
+   "hit_z": 47.835
+  },
+  {
+   "machine_id": "M-1158",
+   "month": "2025-02",
+   "hold": 0.046,
+   "theo_hold": 0.1,
+   "luck_z": -1.448,
+   "hit_z": 50.096
+  },
+  {
+   "machine_id": "M-1158",
+   "month": "2025-01",
+   "hold": 0.053,
+   "theo_hold": 0.1,
+   "luck_z": -1.358,
+   "hit_z": 54.398
+  },
+  {
+   "machine_id": "M-1158",
+   "month": "2025-06",
+   "hold": 0.061,
+   "theo_hold": 0.1,
+   "luck_z": -0.978,
+   "hit_z": 49.57
+  },
+  {
+   "machine_id": "M-1008",
+   "month": "2025-03",
+   "hold": 0.234,
+   "theo_hold": 0.1,
+   "luck_z": 3.082,
+   "hit_z": -0.539
+  }
+ ],
+ "inspect_leads": [
+  {
+   "machine_id": "M-1158",
+   "theme": "Desert Gold",
+   "bank_id": "B-31",
+   "hold": 0.03,
+   "theo_hold": 0.1,
+   "luck_z": -4.57,
+   "hit_z": 124.19,
+   "payout_not_multiple": 0.0,
+   "faults": 1.0,
+   "tamper_reports": 0.0
+  }
+ ],
+ "tamper_reports_total": 80,
+ "tamper_top": [
+  {
+   "machine_id": "M-1112",
+   "tamper_reports": 3.0,
+   "luck_z": 0.303228
+  },
+  {
+   "machine_id": "M-1258",
+   "tamper_reports": 2.0,
+   "luck_z": -1.034501
+  },
+  {
+   "machine_id": "M-1269",
+   "tamper_reports": 2.0,
+   "luck_z": -0.313839
+  },
+  {
+   "machine_id": "M-1156",
+   "tamper_reports": 2.0,
+   "luck_z": 0.562134
+  },
+  {
+   "machine_id": "M-1068",
+   "tamper_reports": 2.0,
+   "luck_z": 0.374016
+  }
+ ],
+ "title_pooled": [
+  {
+   "theme": "Aurora Link",
+   "hold": 0.0906,
+   "theo_hold": 0.09,
+   "pooled_luck_z": 0.1746,
+   "pooled_hit_z": 1.134
+  },
+  {
+   "theme": "Classic Sevens",
+   "hold": 0.07,
+   "theo_hold": 0.07,
+   "pooled_luck_z": 0.0766,
+   "pooled_hit_z": 0.8421
+  },
+  {
+   "theme": "Comet Cash",
+   "hold": 0.0769,
+   "theo_hold": 0.08,
+   "pooled_luck_z": -3.4643,
+   "pooled_hit_z": 3.2031
+  },
+  {
+   "theme": "Desert Gold",
+   "hold": 0.1,
+   "theo_hold": 0.1,
+   "pooled_luck_z": 0.0104,
+   "pooled_hit_z": 0.0985
+  },
+  {
+   "theme": "Jackpot Summit",
+   "hold": 0.1245,
+   "theo_hold": 0.12,
+   "pooled_luck_z": 0.6398,
+   "pooled_hit_z": -1.4563
+  },
+  {
+   "theme": "Lucky Lanterns",
+   "hold": 0.0797,
+   "theo_hold": 0.08,
+   "pooled_luck_z": -1.367,
+   "pooled_hit_z": 0.8738
+  },
+  {
+   "theme": "Neon Nights",
+   "hold": 0.1214,
+   "theo_hold": 0.12,
+   "pooled_luck_z": 0.6212,
+   "pooled_hit_z": 0.1442
+  },
+  {
+   "theme": "Platinum Reels",
+   "hold": 0.1063,
+   "theo_hold": 0.1,
+   "pooled_luck_z": 1.5912,
+   "pooled_hit_z": 0.2301
+  },
+  {
+   "theme": "Prairie Thunder",
+   "hold": 0.1097,
+   "theo_hold": 0.11,
+   "pooled_luck_z": -0.2977,
+   "pooled_hit_z": 2.0003
+  },
+  {
+   "theme": "Royal Draw",
+   "hold": 0.0488,
+   "theo_hold": 0.05,
+   "pooled_luck_z": -0.9951,
+   "pooled_hit_z": -0.5376
+  }
+ ],
+ "M-1158": {
+  "hit_rate": 0.38571051546880886,
+  "published_hit": 0.31544,
+  "hold": 0.0304,
+  "theo_hold": 0.1,
+  "shortfall_usd": 36164.75,
+  "shortfall_ci95": [
+   20654.76074496,
+   51674.739255039996
+  ],
+  "implied_rtp": 0.9696,
+  "luck_z": -4.570146,
+  "hit_z": 124.18958194523066,
+  "months_with_hit_z_gt_40": 6
+ }
+}
